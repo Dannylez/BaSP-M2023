@@ -10,7 +10,7 @@ header {
     height:132px;
     width: 1408px;
     margin: 27px 52px;
-    background-color: aliceblue;
+    background-color:aliceblue;
     border: bottom 40px green;
 }
 
@@ -26,7 +26,6 @@ h1 {
     color: #373867;
 }
 
-p
 .header {
     display: inline;
     height: 61px;
