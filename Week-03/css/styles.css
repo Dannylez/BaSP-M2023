@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto',sans-serif;
+    height: 982px;
+    width: 1512px;
+    background-color:aliceblue;
+}
+
+header {
+    font-size:30px;
+    height:132px;
+    width: 1408px;
+    margin: 27px 52px;
+    background-color: aliceblue;
+    border: bottom 40px green;
+}
+
+main{
+    background-color:rgba(170, 206, 155, 0.1) ;
+    width: 1408px;
+    margin: 0px 52px;
+}
+
+h1 {
+    display:inline;
+    font-size: 40px;
+    color: #373867;
+}
+
+p
+.header {
+    display: inline;
+    height: 61px;
+    width: 637;
+    position:relative;
+    top: 80px;
+    right:55px;
+    color: rgba(55, 56, 103, 0.4) ;
+}
+
+.button-menu {
+    border:none;
+    background-color: aliceblue;
+}
+.header-logos {
+    height:110px;
+    width:450px;
+    float:right;
+}
+
+.logos {
+    width:54px;
+    height:54px;
+    padding:28px 13px;
+}
+
+.separator {
+    position:relative;
+    top:15px;
+}
+.sidebar {
+    display:none;
+    opacity:60;
+}
+

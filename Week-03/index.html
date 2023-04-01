@@ -5,19 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MegaRocket</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h2>Mega Rocket</h2>
-            <div>
-                <img alt="LinkedIn Logo" src="assets/imgs/mdi_linkedin.png"/>
-                <img alt="Twitter Logo" src="assets/imgs/mdi_twitter.png"/>
-                <img alt="Facebook Logo" src="assets/imgs/ri_facebook-fill.png"/>
-                <img alt="Instagram Logo" src="assets/imgs/ph_instagram-logo.png"/>
-                <img alt="Github Logo" src="assets/imgs/mdi_github.png"/>
-            </div>
+            <button class="button-menu">                 
+                <img src="assets/imgs/header-menu.svg" alt="Menu icon">             
+            </button>
+            <h2 class="header">Mega Rocket</h2>
+            <span class="header-logos">
+                <img class="logos" alt="LinkedIn Logo" src="assets/imgs/linkedin-logo.png">
+                <img class="logos" alt="Twitter Logo" src="assets/imgs/twitter-logo.png">
+                <img class="logos" alt="Facebook Logo" src="assets/imgs/facebook-logo.png">
+                <img class="logos" alt="Instagram Logo" src="assets/imgs/instagram-logo.png">
+                <img class="logos" alt="Github Logo" src="assets/imgs/github-logo.png">
+            </span>
+            <img class="separator" alt="separator line" src="assets/imgs/header-border.svg">
         </header>
-        <nav>
+        <nav class="sidebar">
             <input type="search" placeholder="Search">
             <h2>Menu</h2>
             <ul>
@@ -26,6 +34,8 @@
                 <li>Log In</li>
                 <li>Contact Information</li>
             </ul>
+        </nav>
+        <div class="sidebar">
             <h2>Contact us</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus expedita 
@@ -34,7 +44,7 @@
             <a href="mailto:info.megarocket@megarocket.com">info.megarocket@megarocket.com</a>
             <p>54-341-xxxxxxxxx</p>
             <p>AAA xxx, Rosario, Argentina, CP 2000</p>
-        </nav>
+        </div>
         <main>
             <h1>Welcome to MEGA ROCKET</h1>
             <h2>Winner of Lorem Ipsum of the year</h2>
@@ -45,46 +55,38 @@
                 amet odit molestias omnis aliquam repellat?
             </p>
             <button>Learn more</button>
-            <img alt="People working out" src="assets/imgs/people-working-out-indoors-together-with-dumbbells 1.png"/>
+            <img alt="People working out" src="assets/imgs/people-working-out.png">
         </main>
         <section>
             <h2>App Features</h2>
-            <div>
-                <h3>Appointment booking</h3>
-                <img alt="Logo Appointment" src="assets/imgs/appointment.png"/>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa aperiam iusto soluta ex nihil, 
-                    doloribus ad unde quia, quis, libero accusamus. Iste, et illum rerum odio nisi cupiditate animi 
-                    temporibus?
-                </p>
-            </div>
-            <div>
-                <h3>Schedule and timetables</h3>
-                <img alt="Logo Schedule" src="assets/imgs/calendar.png"/>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus amet, debitis ea 
-                    dignissimos temporibus nam odio nihil nisi vel facere sint suscipit ad iste porro officiis ut 
-                    obcaecati aliquam.
-                </p>
-            </div>
-            <div>
-                <h3>Membership management</h3>
-                <img alt="Logo Membership management" src="assets/imgs/membership.png"/>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iure, dignissimos assumenda culpa 
-                    quidem eligendi facere autem ipsam magnam impedit ipsum enim, deserunt magni velit id possimus 
-                    veniam aperiam at!
-                </p>
-            </div>
-            <div>
-                <h3>Contact and suggestions</h3>
-                <img alt="Logo Contact and suggestions" src="assets/imgs/contact.png"/>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae accusamus totam 
-                    deserunt in repellendus magni porro. Placeat pariatur molestiae eveniet aliquam quasi alias 
-                    dignissimos ex a necessitatibus eum. Officiis?
-                </p>
-            </div>
+            <h3>Appointment booking</h3>
+            <img alt="Logo Appointment" src="assets/imgs/appointment.png">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa aperiam iusto soluta ex nihil, 
+                doloribus ad unde quia, quis, libero accusamus. Iste, et illum rerum odio nisi cupiditate animi 
+                temporibus?
+            </p>            
+            <h3>Schedule and timetables</h3>
+            <img alt="Logo Schedule" src="assets/imgs/calendar.png">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus amet, debitis ea 
+                dignissimos temporibus nam odio nihil nisi vel facere sint suscipit ad iste porro officiis ut 
+                obcaecati aliquam.
+            </p>            
+            <h3>Membership management</h3>
+            <img alt="Logo Membership management" src="assets/imgs/membership.png">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iure, dignissimos assumenda culpa 
+                quidem eligendi facere autem ipsam magnam impedit ipsum enim, deserunt magni velit id possimus 
+                veniam aperiam at!
+            </p>            
+            <h3>Contact and suggestions</h3>
+            <img alt="Logo Contact and suggestions" src="assets/imgs/contact.png">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae accusamus totam 
+                deserunt in repellendus magni porro. Placeat pariatur molestiae eveniet aliquam quasi alias 
+                dignissimos ex a necessitatibus eum. Officiis?
+            </p>
         </section>
         <form>
             <h2>Contact</h2>
@@ -127,8 +129,8 @@
                     accusantium amet nobis doloribus nemo nisi commodi atque hic molestias magnam necessitatibus 
                     maiores nihil vitae in, eveniet tempore?
                 </p>
-                <img alt="Old gym weights photo" src="assets/imgs/image 1.png"/>
-                <img alt="Gym brench photo" src="assets/imgs/chrome_YpzRso3yif 1.png"/>
+                <img alt="Old gym weights photo" src="assets/imgs/gym-weights.png">
+                <img alt="Gym brench photo" src="assets/imgs/gym-brench.png">
                 <h3>Mission</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quaerat nobis enim alias 
@@ -147,7 +149,7 @@
                     <li>Boxing</li>
                     <li>Fitness</li>
                 </ol>
-                <img alt="Activities logo" src="assets/imgs/activities.png"/>
+                <img alt="Activities logo" src="assets/imgs/activities.png">
             </div>
             <div>
                 <h2>Black Membership</h2>
@@ -157,44 +159,42 @@
                     <li>Personalized follow up by a trainer</li>
                     <li>Grid visualization</li>
                 </ol>
-                <img alt="Black memberships logo" src="assets/imgs/black.png"/>
+                <img alt="Black memberships logo" src="assets/imgs/black.png">
                 <h2>Classic Membership</h2>
                 <ol>
                     <li>Free pass to the weight room</li>
                     <li>Personalized follow up by a trainer</li>
                     <li>Grid visualization</li>
                 </ol>
-                <img alt="Classic memberships logo" src="assets/imgs/classic.png"/>
+                <img alt="Classic memberships logo" src="assets/imgs/classic.png">
                 <h2>Only Classes Membership</h2>
                 <ol>
                     <li>Free pass to the weight room</li>
                     <li>Grid visualization</li>
                 </ol>
-                <img alt="Only classes memberships logo" src="assets/imgs/only classes.png"/>
+                <img alt="Only classes memberships logo" src="assets/imgs/only-classes.png">
             </div>
         </section>
-            <div>
-                <button>PREV</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>...</button>
-                <button>NEXT</button>
-            </div>
+            <button>PREV</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>...</button>
+            <button>NEXT</button>
         <footer>
-            <div>
-                <img alt="LinkedIn Logo" src="assets/imgs/mdi_linkedin.png"/>
-                <img alt="Twitter Logo" src="assets/imgs/mdi_twitter.png"/>
-                <img alt="Facebook Logo" src="assets/imgs/ri_facebook-fill.png"/>
-                <img alt="Instagram Logo" src="assets/imgs/ph_instagram-logo.png"/>
-                <img alt="Github Logo" src="assets/imgs/mdi_github.png"/>
-            </div>
-            <div>
-                <p>Rosario, Argentina</p>
-                <p>Copyright &copy 2022 Radium rocket. All rights reserved.</p>
-            </div>
+            <span>
+                <img alt="LinkedIn Logo" src="assets/imgs/linkedin-logo.png">
+                <img alt="Twitter Logo" src="assets/imgs/twitter-logo.png">
+                <img alt="Facebook Logo" src="assets/imgs/facebook-logo.png">
+                <img alt="Instagram Logo" src="assets/imgs/instagram-logo.png">
+                <img alt="Github Logo" src="assets/imgs/github-logo.png">
+            </span>
+            <p>Rosario, Argentina</p>
+            <p>
+                Copyright &copy 2022 Radium rocket. All rights reserved.
+            </p>
         </footer>
     </body>
 </html>
