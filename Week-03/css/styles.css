@@ -2,127 +2,138 @@ body {
     font-family: 'Roboto',sans-serif;
     height: 982px;
     width: 1512px;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
-
 header {
-    font-size:30px;
-    height:132px;
+    height: 132px;
     width: 1408px;
     margin: 27px 52px;
-    background-color:aliceblue;
+    background-color: aliceblue;
     border: bottom 40px green;
+    font-size: 30px;
 }
-
 main {
     width: 1408px;
-    height:905px;
+    height: 905px;
     margin: 0px 52px;
-    background-color:rgba(170, 206, 155, 0.1);
+    background-color: rgba(170, 206, 155, 0.1);
 }
-
-
-
 .header {
+    position: relative;
     display: inline;
     height: 61px;
     width: 637;
-    position:relative;
     top: 80px;
-    right:55px;
+    right: 55px;
     color: rgba(55, 56, 103, 0.4) ;
 }
-
 .button-menu {
-    border:none;
+    border: none;
     background-color: aliceblue;
 }
 .header-logos {
-    height:110px;
-    width:450px;
-    float:right;
+    height: 110px;
+    width: 450px;
+    float: right;
 }
-
 .logos {
-    width:54px;
-    height:54px;
-    padding:28px 13px;
+    width: 54px;
+    height: 54px;
+    padding: 28px 13px;
 }
-
 .separator {
-    position:relative;
-    top:15px;
+    position: relative;
+    top: 15px;
 }
-
 .sidebar {
-    display:none;
-    opacity:60;
+    display: none;
 }
-
 .main-text {
-    position:relative;
-    top:76px;
-    float:left;
-    width:666px;
-    height:693px;
+    position: relative;
+    top: 76px;
+    float: left;
+    width: 666px;
+    height: 693px;
 }
-
 .main-title {
-    position:relative;
-    top:61px;
+    position: relative;
+    top: 61px;
     font-size: 40px;
     color: #373867;
 }
-
 .main-sub-title {
-    position:relative;
-    top:50px;
-    color: rgba(55, 56, 103, 0.4);
+    position: relative;
+    top: 50px;
     font-size: 30px;
-}
-
-.main-paragraph {
-    position:relative;
-    top:150px;
     color: rgba(55, 56, 103, 0.4);
-    font-size: 20px;
 }
-
+.main-paragraph {
+    position: relative;
+    top: 150px;
+    font-size: 20px;
+    color: rgba(55, 56, 103, 0.4);
+}
 .main-btn {
     position:relative;
-    top:250px;
-    left:20px;
-    background-color:rgb(170, 206, 155);
-    padding:15px 36px;
-    color:rgb(55, 56, 103);
-    font-weight: 500;
-    border:none;
+    top: 250px;
+    left: 20px;
+    padding: 15px 36px;
+    background-color: rgb(170, 206, 155);
+    border: none;
     border-radius: 5px;
+    font-weight: 500;
+    color: rgb(55, 56, 103);
 }
-
 .main-img {
-    position:relative;
+    position: relative;
     top: 74px;
-    float:right;
-    
+    float: right;
 }
-
 .app-features {
     width: 1408px;
+    height: 550px;
     margin: 27px 52px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(221, 225, 220);
+    border-width: 1px;
 }
-
+.features-h2 {
+    position: relative;
+    display: inline;
+    top: 30px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: rgb(170, 206, 155);
+    font-size: 30px;
+    color: rgb(55, 56, 103)
+} 
 .features {
-    position:relative;
-    float:left;
-    width:700px;
-    height:300px;
+    position: relative;
+    float: left;
+    top: 70px;
+    width: 700px;
+    height: 150px;
+    margin: 20px 0px;
 }
-
+.features-img {
+    display: inline;
+    float: left;
+ }
 .features-sub-title {
-    width:700px;
+    position: relative;
+    display: inline;
+    left: 20px;
+    margin: 0px;
+    font-size: 40px;
+    color: rgb(55, 56, 103)
 }
-
 .features-paragraph {
-    width:700px
+    position: relative;
+    display: inline;
+    float: left;
+    top: 20px;
+    left: 25px;
+    max-width: 400px;
+    color: rgb(55, 56, 103)
 }
