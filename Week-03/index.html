@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MegaRocket</title>
-        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+        <link rel="stylesheet" href="css/reset.css" media="screen" />
+        <link rel="stylesheet" href="css/styles.css" media="screen" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,7 +24,6 @@
                 <img class="logos" alt="Instagram Logo" src="assets/imgs/instagram-logo.png">
                 <img class="logos" alt="Github Logo" src="assets/imgs/github-logo.png">
             </span>
-            <img class="separator" alt="separator line" src="assets/imgs/header-border.svg">
         </header>
         <nav class="sidebar">
             <input type="search" placeholder="Search">
@@ -56,15 +55,15 @@
                     Cupiditate eius non, quasi similique quibusdam, consectetur quod, suscipit exercitationem deserunt 
                     amet odit molestias omnis aliquam repellat?
                 </p>
-                <button class="main-btn">Learn more</button>
+                <button class="btn btn-green">Learn more</button>
             </div>
             <img class="main-img" alt="People working out" src="assets/imgs/people-working-out.png">
         </main>
         <section class="app-features">
             <div class="features-div">
-                <h2 class="features-h2">App Features</h2>
+                <h2 class="section-title">App Features</h2>
             </div>
-            <div class="features">
+            <div class="box">
                 <h3 class="features-sub-title">
                     Appointment booking
                 </h3>
@@ -75,7 +74,7 @@
                     temporibus?
                 </p>  
             </div>          
-            <div class="features">
+            <div class="box">
                 <h3 class="features-sub-title">
                     Membership management
                 </h3>
@@ -86,7 +85,7 @@
                     veniam aperiam at!
                 </p>    
             </div>          
-            <div class="features"> 
+            <div class="box"> 
                 <h3 class="features-sub-title">
                     Schedule and timetables
                 </h3>
@@ -97,7 +96,7 @@
                     obcaecati aliquam.
                 </p>      
             </div>          
-            <div class="features">        
+            <div class="box">        
                 <h3 class="features-sub-title">
                     Contact and suggestions
                 </h3>
@@ -110,32 +109,44 @@
             </div>          
         </section>
         <form>
-            <h2>Contact</h2>
-            <label>Name</label>
-            <input type="text" placeholder="Write here">
-            <label>Last Name</label>
-            <input type="text" placeholder="Write here"/>
-            <label>Email</label>
-            <input type="email" placeholder="Write here"/>
-            <label>Contact Reason</label>
-            <select>
-                <option value="choose">
-                    Choose
-                </option>
-                <option value="membership">
-                    I want to know about membership and cost
-                </option>
-                <option value="suggestion">
-                    I want to make a question or suggestion
-                </option>
-                <option value="contact">
-                    I want to make a contact
-                </option>
-            </select>
-            <label>Message</label>
-            <textarea placeholder="Write here"></textarea>
-            <button>Clear</button>
-            <button>Send It</button>
+            <h2 id="contact">Contact</h2>
+            <div class="box forms">
+                <label>Name</label>
+                <input type="text" placeholder="Write here">
+            </div>
+            <div class="box forms">
+                <label>Last Name</label>
+                <input type="text" placeholder="Write here"/>
+            </div>
+            <div class="box forms">
+                <label>Email</label>
+                <input type="email" placeholder="Write here"/>
+            </div>
+            <div class="box forms">
+                <label>Contact Reason</label>
+                <select>
+                    <option value="choose">
+                        Choose
+                    </option>
+                    <option value="membership">
+                        I want to know about membership and cost
+                    </option>
+                    <option value="suggestion">
+                        I want to make a question or suggestion
+                    </option>
+                    <option value="contact">
+                        I want to make a contact
+                    </option>
+                </select>
+            </div>
+            <div class="box message">
+                <label>Message</label>
+                <textarea placeholder="Write here"></textarea>
+            </div>
+            <div class="box">
+                <button class="btn" id="clear">Clear</button>
+                <button class="btn btn-green" id="send-it">Send It</button>
+            </div>
         </form>
         <section>
             <h2>History</h2>
@@ -196,6 +207,7 @@
                 <img alt="Only classes memberships logo" src="assets/imgs/only-classes.png">
             </div>
         </section>
+        <div>
             <button>PREV</button>
             <button>1</button>
             <button>2</button>
@@ -204,6 +216,7 @@
             <button>5</button>
             <button>...</button>
             <button>NEXT</button>
+        </div>
         <footer>
             <span>
                 <img alt="LinkedIn Logo" src="assets/imgs/linkedin-logo.png">
