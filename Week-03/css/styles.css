@@ -26,7 +26,7 @@ section {
 }
 
 form {
-    height: 700px;
+    height: 600px;
     width: 1408px;
     margin: 0px 52px;
 }
@@ -83,10 +83,16 @@ textarea {
     font-size: 30px;
 }
 
+#hstry {
+    height: 780px;
+    padding-top: 50px;
+    border-top: 1px solid rgb(221, 225, 220);
+}
+
 #hstry-p {
     border-left:5px solid #373867;
     padding:5px 15px;
-    margin: 25px 0;
+    margin-top: 25px;
 }
 
 .header {
@@ -191,6 +197,11 @@ textarea {
     margin: 20px 0px;
 }
 
+.right {
+    width:620px;
+    margin-left: 80px;
+}
+
 .features-img {
     display: inline;
     float: left;
@@ -233,17 +244,69 @@ textarea {
 
 #hstry .box {
     height:600px;
-    background-color: aqua;
+    width:680px;
     line-height: 18px;
 }
 
+#hstry .right {
+    width:680px;
+    margin-left: 40px;
+}
+
 #hstry h3 {
-    margin:25px 0px;
+    margin-bottom:45px;
     font-size: 20px;
+}
+
+#hstry .box p {
+    height:150px;
+    max-width: 680px;
+    border-bottom: 2px solid black;
 }
 
 #hstry .box img {
     height: 280px;
     width:680px;
-    margin:50px 0;
+    margin-top:80px;
+}
+
+#hstry .right img {
+    margin-top:0;
+    margin-bottom:65px;
+}
+
+#hstry .right p {
+    border:none;
+    border-top: 2px solid black;
+}
+
+#members {
+    border-top: 1px solid rgb(221, 225, 220);
+}
+
+#members .box {
+    height: 270px;
+}
+
+#members h2 {
+    position:relative;
+    left:250px;
+    max-width: 270px;
+    font-size: 40px;
+}
+
+#members ol {
+    position: relative;
+    top:20px;
+    left: 265px;
+    list-style-type:decimal;
+}
+
+#members img {
+    display:inline;
+    position:relative;
+    bottom:120px;
+    float:left;
+    width:170px;
+    height:170px;
 }
