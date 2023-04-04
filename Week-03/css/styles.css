@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto',sans-serif;
     color:#373867;
 }
+
 header {
     height: 132px;
     width: 1408px;
@@ -11,25 +12,35 @@ header {
     border-bottom: 10px solid rgb(170, 206, 155);
     font-size: 30px;
 }
+
 main {
     height: 905px;
     width: 1408px;
     margin: 0px 52px;
     background-color: rgba(170, 206, 155, 0.1);
 }
+
+section {
+    width: 1408px;
+    margin: 27px 52px;
+}
+
 form {
     height: 700px;
     width: 1408px;
     margin: 0px 52px;
 }
+
 label {
     font-weight: bold;
 }
+
 input, select, textarea{
     display: block;
     margin-top: 7px;
     border-radius: 5px;
 }
+
 input {
     height:30px;
     width:450px;
@@ -39,32 +50,43 @@ select {
     height:35px;
     width:700px;
 }
-option {
-    color:rgba(55, 56, 103, 0.5);
-    font-size: 1.5em;
-}
+
 textarea {
     height:150px;
     width:1408px;
-
 }
+
 #clear {
     float:left;
     top: 80px;
     left: 0px;
     padding: 9px 55px;
 }
+
 #send-it {
     float: left;
     top: 80px;
     left: 91px;
     padding: 10px 50px;
 }
-#contact {
-    display:block;
-    border:none;
+
+#features {
+    height: 550px;
+    padding: 20px 0;
+    border-top: 1px solid rgb(221, 225, 220);
+    border-bottom: 1px solid rgb(221, 225, 220);
+}
+
+#app-features {
+    display:inline;
+    border-bottom: 5px solid rgb(170, 206, 155);
     font-size: 30px;
-    font-weight: bold;
+}
+
+#hstry-p {
+    border-left:5px solid #373867;
+    padding:5px 15px;
+    margin: 25px 0;
 }
 
 .header {
@@ -77,23 +99,28 @@ textarea {
     font-weight: bold;
     color: rgba(55, 56, 103, 0.4) ;
 }
+
 .button-menu {
     border: none;
     background-color: white;
 }
+
 .header-logos {
     height: 110px;
     width: 450px;
     float: right;
 }
+
 .logos {
     width: 54px;
     height: 54px;
     padding: 28px 13px 0 13px;
 }
+
 .sidebar {
     display: none;
 }
+
 .main-text {
     position: relative;
     top: 76px;
@@ -101,6 +128,7 @@ textarea {
     width: 666px;
     height: 693px;
 }
+
 .main-title {
     position: relative;
     top: 61px;
@@ -108,12 +136,14 @@ textarea {
     font-size: 40px;
     font-weight: bold;
 }
+
 .main-sub-title {
     position: relative;
     top: 50px;
     font-size: 30px;
     color: rgba(55, 56, 103, 0.4);
 }
+
 .main-paragraph {
     position: relative;
     top: 150px;
@@ -121,6 +151,7 @@ textarea {
     font-size: 20px;
     color: rgba(55, 56, 103, 0.4);
 }
+
 .btn {
     position:relative;
     top: 320px;
@@ -129,32 +160,28 @@ textarea {
     border-radius: 5px;
     font-weight: 500;
 }
+
 .btn-green {
     background-color: rgb(170, 206, 155);
     border: none;
     font-weight: bold;
 }
+
 .main-img {
     position: relative;
     top: 74px;
     float: right;
 }
-.app-features {
-    width: 1408px;
-    height: 550px;
-    margin: 27px 52px;
-    border-top: 1px solid rgb(221, 225, 220);
-    border-bottom: 1px solid rgb(221, 225, 220);
-}
+
+
+
 .section-title {
-    position: relative;
-    display: inline;
-    top: 30px;
-    padding-bottom: 10px;
-    border-bottom: 5px solid rgb(170, 206, 155);
+    display:block;
+    border:none;
     font-size: 30px;
     font-weight: bold;
 } 
+
 .box {
     position: relative;
     float: left;
@@ -163,10 +190,12 @@ textarea {
     height: 150px;
     margin: 20px 0px;
 }
+
 .features-img {
     display: inline;
     float: left;
- }
+}
+
 .features-sub-title {
     position: relative;
     display: inline;
@@ -175,6 +204,7 @@ textarea {
     font-weight: bold;
     font-size: 40px;
 }
+
 .features-paragraph {
     position: relative;
     display: inline;
@@ -183,17 +213,37 @@ textarea {
     left: 25px;
     max-width: 400px;
 }
+
 .forms {
     top: 50px;
     height: 100px;
     width: 469px;
     margin: 0px;
 }
+
 .message {
     right: 468px;
     top: 120px;
 }
+
 ::placeholder {
     color:rgba(55, 56, 103, 0.5);;
-    font-size: 1.5em;
+    font-size: 14px;
   }
+
+#hstry .box {
+    height:600px;
+    background-color: aqua;
+    line-height: 18px;
+}
+
+#hstry h3 {
+    margin:25px 0px;
+    font-size: 20px;
+}
+
+#hstry .box img {
+    height: 280px;
+    width:680px;
+    margin:50px 0;
+}
