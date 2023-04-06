@@ -11,3 +11,8 @@ In this week I'll be working on the HTML structure of the landpage with the desi
 
 ## Week 03
 This time I'll be working on the styles of the structure created last week using a reset.css and styles.css file trying to make a pixel perfect page.
+
+## Week 04
+This task consists of recreating the landing page styles again but with a responsive model taking priority on the mobile model (mobile first).
+We will also be working on a new github feature called github pages, wich allows you to view the repository online, without having to download the content.
+The Github pages for this week can be found on: https://dannylez.github.io/BaSP-M2023/Week-04/index.html .
