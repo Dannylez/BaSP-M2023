@@ -1,8 +1,10 @@
 body {
     font-family: 'Roboto',sans-serif;
     color: #373867;
+    font-size: 3vw;
+    font-weight: bold;
 }
 
-.sidebar {
+.hide {
     display:none;
 }

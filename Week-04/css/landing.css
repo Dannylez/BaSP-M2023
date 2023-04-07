@@ -2,31 +2,41 @@ header {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin:0 0.5rem;
-    border-bottom:5px solid rgb(170, 206, 155);
-    font-size:16px;
+    margin:0 2vw;
+    border-bottom:1vw solid rgb(170, 206, 155);
+    font-size:3vw;
     color:rgba(55, 56, 103, 0.4);
     font-weight:bold;
 }
 
 main {
     background-color:rgba(170, 206, 155, 0.2);
-    margin:0 0.5rem;
-    padding:1.5rem 0;
+    padding:2vw 0;
     font-weight: bold;
     color:rgba(55, 56, 103, 0.4);
+    height:170vw;
+}
+
+.section-title {
+    display:inline;
+    font-size: 8vw;
+    color: #373867;
 }
 
 h1 {
-    font-size: 50px;
-    color: #373867;
+    font-size: 12vw;
 }
 
 .container {
     display:flex;
     flex-direction: column;
     justify-content:space-between;
-    height:750px;
+    margin:0 2vw 8vw 2vw;
+}
+
+.with-border {
+    border-top: 0.5vw solid rgb(221, 225, 220);
+    border-bottom: 0.5vw solid rgb(221, 225, 220);
 }
 
 .box {
@@ -61,6 +71,10 @@ header button{
     width:15%;
 }
 
+#main-subtitle {
+    font-size: 5vw;
+}
+
 main button {
     display:none;
 }
@@ -71,4 +85,28 @@ main img {
 
 #main-paragraph {
     order:1;
+}
+
+#app-features {
+    width:50vw;
+    padding:2vw;
+    margin:2vw;
+    border-bottom:1vw solid rgb(170, 206, 155);
+}
+
+.feature {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:70vw;
+    margin:10vw 2vw;
+}
+
+.feature img {
+    order:-1;
+    width: 20vw;
+}
+
+.feature h3 {
+    font-size: 10vw;
 }
