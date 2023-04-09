@@ -4,7 +4,7 @@ body {
     font-size: 4vw;
 }
 
-.hide {
+.mobile-hide {
     display:none;
 }
 
@@ -16,7 +16,7 @@ input, select, textarea{
     display: block;
     margin-top: 3vw;
     border-color: #373867;
-    border-width: 2px;
+    border-width: 0.3vw;
     border-radius: 1vw;
     width: 92vw;
     font-size: 4.5vw;
@@ -45,7 +45,7 @@ button {
     height:8vw;
     margin-bottom: 5vw;
     border-radius: 1vw;
-    border-color: #373867;
+    border:0.3vw solid #373867;
     background-color: white;
     font-size: 3vw;
     font-weight: bold;
