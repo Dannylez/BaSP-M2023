@@ -17,15 +17,24 @@ main {
     height:170vw;
 }
 
+#hstry {
+    margin-left:2vw;
+    padding:2vw 0;
+    color:rgba(55, 56, 103, 0.4);
+    height:260vw
+}
+
 .section-title {
-    display:inline;
     font-size: 8vw;
+    font-weight: bold;
     color: #373867;
 }
 
 h1 {
     font-size: 12vw;
 }
+
+
 
 .container {
     display:flex;
@@ -39,6 +48,12 @@ h1 {
     border-bottom: 0.5vw solid rgb(221, 225, 220);
 }
 
+.column {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .box {
     display:flex;
     justify-content:flex-start;
@@ -49,7 +64,6 @@ h1 {
 header button{
     padding:0;
     width:25%;
-    background-color:white;
     border:none;
 }
 
@@ -95,9 +109,6 @@ main img {
 }
 
 .feature {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     height:70vw;
     margin:10vw 2vw;
 }
@@ -109,4 +120,42 @@ main img {
 
 .feature h3 {
     font-size: 10vw;
+}
+
+#contact {
+    align-items: center;
+    height:150vw
+}
+
+form h2 {
+    position:relative;
+    right:33vw;
+}
+
+.btn-green{
+    border:none;
+    background-color:rgb(170, 206, 155);
+}
+
+#hstry-p {
+    margin:4vw 0;
+    padding-left: 2vw;
+    border-left: 1vw solid #373867;
+}
+
+#hstry img {
+    width:98%;
+}
+
+#hstry .container {
+    height:220vw;
+    
+}
+
+.item:nth-child(3) {
+    order:1;
+}
+
+.item:nth-child(6) {
+    order:2;
 }

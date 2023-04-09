@@ -1,10 +1,53 @@
 body {
     font-family: 'Roboto',sans-serif;
     color: #373867;
-    font-size: 3vw;
-    font-weight: bold;
+    font-size: 4vw;
 }
 
 .hide {
     display:none;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea{
+    display: block;
+    margin-top: 3vw;
+    border-color: #373867;
+    border-width: 2px;
+    border-radius: 1vw;
+    width: 92vw;
+    font-size: 4.5vw;
+    font-family: 'Roboto',sans-serif;
+    color:rgba(55, 56, 103, 0.5);
+    }
+
+::placeholder {
+    color:rgba(55, 56, 103, 0.5);
+}
+
+input {
+    height:5vw;
+}
+
+select{
+    height: 6vw;
+}
+  
+textarea {
+    height: 24vw;
+}
+
+button {
+    width:25vw;
+    height:8vw;
+    margin-bottom: 5vw;
+    border-radius: 1vw;
+    border-color: #373867;
+    background-color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    color:#373867;
 }

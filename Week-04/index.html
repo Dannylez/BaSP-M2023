@@ -52,9 +52,10 @@
             <div id="main-paragraph">        
                 <p>We don't just won the prize, we are the prize:</p>            
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illo assumenda pariatur eos. 
-                    Cupiditate eius non, quasi similique quibusdam, consectetur quod, suscipit exercitationem deserunt 
-                    amet odit molestias omnis aliquam repellat?
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper 
+                    erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. 
+                    Donec egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in 
+                    faucibus orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet
                 </p> 
             </div>            
                 <button class="btn btn-green">Learn more</button>            
@@ -64,7 +65,7 @@
             <div id="app-features" >
                 <h2 class="section-title">App Features</h2>
             </div>
-            <div class="feature">
+            <div class="feature column">
                 <h3 class="section-title">
                     Appointment booking
                 </h3>
@@ -75,7 +76,7 @@
                     temporibus?
                 </p>  
             </div>          
-            <div class="feature">
+            <div class="feature column">
                 <h3 class="section-title">
                     Membership management
                 </h3>
@@ -86,7 +87,7 @@
                     veniam aperiam at!
                 </p>    
             </div>          
-            <div class="feature"> 
+            <div class="feature column"> 
                 <h3 class="section-title">
                     Schedule and timetables
                 </h3>
@@ -97,7 +98,7 @@
                     obcaecati aliquam.
                 </p>      
             </div>          
-            <div class="feature">        
+            <div class="feature column">        
                 <h3 class="section-title">
                     Contact and suggestions
                 </h3>
@@ -109,21 +110,21 @@
                 </p>
             </div>          
         </section>
-        <form>
+        <form id="contact" class="container">
             <h2 class="section-title">Contact</h2>
-            <div class="box forms">
+            <div class="column">
                 <label>Name</label>
                 <input type="text" placeholder="Write here">
             </div>
-            <div class="box forms">
+            <div class="column">
                 <label>Last Name</label>
                 <input type="text" placeholder="Write here">
             </div>
-            <div class="box forms">
+            <div class="column">
                 <label>Email</label>
                 <input type="email" placeholder="Write here">
             </div>
-            <div class="box forms">
+            <div class="column">
                 <label>Contact Reason</label>
                 <select>
                     <option value="choose">
@@ -140,25 +141,25 @@
                     </option>
                 </select>
             </div>
-            <div class="box message">
+            <div class="column">
                 <label>Message</label>
                 <textarea placeholder="Write here"></textarea>
             </div>
-            <div class="box">
-                <button class="btn" id="clear">Clear</button>
-                <button class="btn btn-green" id="send-it">Send It</button>
+            <div class="column">
+                <button>Clear</button>
+                <button class="btn-green">Send It</button>
             </div>
         </form>
-        <section id="hstry">
+        <section id="hstry" class="with-border">
             <h2 class="section-title">History</h2>
             <p id="hstry-p">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ex facere recusandae quae 
                 voluptatem, alias iste! Suscipit atque aut dolorem fugit accusamus inventore, veritatis ut harum 
                 dolorum enim eligendi soluta. 
             </p>
-            <div class="box">
-                <h3 class="section-title">Origin</h3>
-                <p>
+            <div class="container">
+                <h3 class="section-title item">Origin</h3>
+                <p class="item">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper
                     erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec
                     egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci
@@ -167,12 +168,10 @@
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus 
                     dignissim imperdiet
                 </p>
-                <img alt="Old gym weights photo" src="assets/imgs/gym-weights.png">
-            </div>
-            <div class="box right">
-                <img alt="Gym brench photo" src="assets/imgs/gym-brench.png">
-                <h3 class="section-title">Mission</h3>
-                <p>
+                <img class="item" alt="Old gym weights photo" src="../assets/imgs/gym-weights.png">
+                <img class="item" alt="Gym brench photo" src="../assets/imgs/gym-brench.png">
+                <h3 class="section-title item">Mission</h3>
+                <p class="item">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper 
                     erat varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec 
                     egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci 
