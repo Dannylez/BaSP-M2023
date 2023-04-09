@@ -24,6 +24,10 @@ main {
     height:260vw
 }
 
+#members {
+    height:300vw;
+}
+
 .section-title {
     font-size: 8vw;
     font-weight: bold;
@@ -75,13 +79,13 @@ header button{
     width:75%;
 }
 
-#header-logos {
+.logos {
     display:flex;
     justify-content:space-between;
     width:40%;
 }
 
-.logos {
+.logo {
     width:15%;
 }
 
@@ -113,7 +117,7 @@ main img {
     margin:10vw 2vw;
 }
 
-.feature img {
+.feature img, #members img {
     order:-1;
     width: 20vw;
 }
@@ -149,7 +153,6 @@ form h2 {
 
 #hstry .container {
     height:220vw;
-    
 }
 
 .item:nth-child(3) {
@@ -158,4 +161,16 @@ form h2 {
 
 .item:nth-child(6) {
     order:2;
+}
+
+#members .column{
+    justify-content: space-around;
+    align-items: center;
+    height:150vw;
+    padding:2vw 0;
+}
+
+#members .container {
+    justify-content: space-around;
+    height:300vw;
 }

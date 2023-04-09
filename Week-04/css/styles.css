@@ -51,3 +51,10 @@ button {
     font-weight: bold;
     color:#373867;
 }
+
+ol {
+    width:67vw;
+    text-align:center;
+    list-style-type:decimal;
+    list-style-position:inside;
+}
