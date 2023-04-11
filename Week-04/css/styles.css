@@ -1,57 +1,63 @@
-body {
-    font-family: 'Roboto',sans-serif;
-    color: #373867;
-    font-size: 4vw;
+body{
+    font-family:'Roboto',sans-serif;
+    color:#373867;
+    font-size:3.6vw;
 }
 
 .mobile-hide, .btn-hide{
     display:none;
 }
 
-label {
-    font-weight: bold;
+
+
+/*---------FORMS---------*/
+
+label{
+    font-weight:bold;
+    margin:3vw 0;
 }
 
 input, select, textarea{
-    display: block;
-    margin-top: 3vw;
-    border-color: #373867;
-    border-width: 0.3vw;
-    border-radius: 1vw;
-    width: 92vw;
-    font-size: 4.5vw;
-    font-family: 'Roboto',sans-serif;
+    display:block;
+    border-color:#373867;
+    border-width:0.3vw;
+    border-radius:1vw;
+    width:92vw;
+    font-size:4.5vw;
+    font-family:'Roboto',sans-serif;
     color:rgba(55, 56, 103, 0.5);
     }
 
-::placeholder {
+::placeholder{
     color:rgba(55, 56, 103, 0.5);
 }
 
-input {
-    height:5vw;
+input{
+    height:8.5vw;
 }
 
 select{
-    height: 6vw;
+    height:9.5vw;
 }
   
-textarea {
-    height: 24vw;
+textarea{
+    height:32vw;
     width:94vw;
 }
 
-button {
+button{
     width:25vw;
     height:8vw;
-    margin-bottom: 5vw;
-    border-radius: 1vw;
+    margin-top:5vw;
+    border-radius:1vw;
     border:0.3vw solid #373867;
-    background-color: white;
-    font-size: 3vw;
-    font-weight: bold;
+    background-color:white;
+    font-size:3vw;
+    font-weight:bold;
     color:#373867;
 }
+
+/*---------LISTS---------*/
 
 ol {
     width:67vw;

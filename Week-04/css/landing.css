@@ -1,97 +1,67 @@
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:0 2vw;
-    border-bottom:1vw solid rgb(170, 206, 155);
-    font-size:3vw;
-    color:rgba(55, 56, 103, 0.4);
-    font-weight:bold;
-}
-
-main {
-    background-color:rgba(170, 206, 155, 0.2);
-    font-weight: bold;
-    color:rgba(55, 56, 103, 0.4);
-    height:170vw;
-}
-
-#hstry {
-    margin-left:2vw;
-    padding:2vw 0;
-    color:rgba(55, 56, 103, 0.4);
-    height:260vw
-}
-
-#members {
-    height:300vw;
-}
-
-footer {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height:40vw;
-    margin:0 2vw;
-    padding:5vw 0 2vw 0;
-    border-top:1vw solid rgb(170, 206, 155);
-    font-size:3vw;
-}
-
 .section-title {
-    font-size: 8vw;
-    font-weight: bold;
-    color: #373867;
+    font-size:7.7vw;
+    font-weight:bold;
+    color:#373867;
 }
-
-h1 {
-    padding:2vw 0;
-    font-size: 12vw;
-}
-
-
 
 .container {
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content:space-between;
     margin:0 2vw 8vw 2vw;
 }
 
 .with-border {
-    border-top: 0.5vw solid rgb(221, 225, 220);
-    border-bottom: 0.5vw solid rgb(221, 225, 220);
+    border-top:0.5vw solid rgb(221, 225, 220);
+    border-bottom:0.5vw solid rgb(221, 225, 220);
     margin-left:2vw;
     margin-right:2vs;
 }
 
 .column {
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.btn-green{
+    border:none;
+    background-color:rgb(170, 206, 155);
+}
+
+/*---------HEADER---------*/
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:13.3vw;
+    margin:0 2vw;
+    border-bottom:1vw solid rgb(170, 206, 155);
+    font-size:3vw;
+    font-weight:bold;
+    color:rgba(55, 56, 103, 0.4);
 }
 
 .box {
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    flex:0.5 0 150px;
+    height:13.3vw;
 }
 
 header button{
+    position:relative;
+    bottom:2vw;
     margin-bottom:2vw;
     padding:0;
-    width:25%;
+    width:10.7vw;
     border:none;
 }
 
 .box img {
-    width:100%;
-}
-
-#header-title {
-    width:75%;
+    width:10.7vw;
 }
 
 .logos {
@@ -101,24 +71,40 @@ header button{
 }
 
 .logo {
-    width:6vw;
+    width:5vw;
 }
 
-#main-subtitle {
-    font-size: 5vw;
+/*---------MAIN---------*/
+
+main {
+    height:170vw;
+    padding:2vw 0;
+    background-color:rgba(170, 206, 155, 0.2);
+    font-weight: bold;
+    color:rgba(55, 56, 103, 0.4);
 }
 
-main button {
+main .section-title{
+    font-size:10.2vw;
+}
+
+#main-subtitle{
+    font-size:5vw;
+}
+
+main button{
     display:none;
 }
 
-main img {
+main img{
     width:100%;
 }
 
-#main-paragraph {
+#main-paragraph{
     order:1;
 }
+
+/*---------FEATURES---------*/
 
 #app-features h2{
     width:50vw;
@@ -127,73 +113,111 @@ main img {
     border-bottom:1vw solid rgb(170, 206, 155);
 }
 
-.feature {
+.feature{
     height:70vw;
     margin:10vw 2vw;
 }
 
-.feature img, #members img {
+.feature img, #members img{
     order:-1;
-    width: 20vw;
+    width:20vw;
 }
 
-.feature h3 {
-    font-size: 10vw;
+.feature h3{
+    font-size:10vw;
 }
 
-.text-feature {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.text-feature{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
     height:60vw;
 }
 
-#contact {
+/*---------CONTACT---------*/
+
+#contact{
     align-items:center;
     height:150vw
 }
 
-form h2 {
-    align-self: flex-start;
+form h2{
+    align-self:flex-start;
 }
 
-.btn-green{
-    border:none;
-    background-color:rgb(170, 206, 155);
+/*---------HISTORY---------*/
+
+#hstry{
+    height:260vw;
+    margin-left:2vw;
+    padding:2vw 0;
+    color:rgba(55, 56, 103, 0.4);
 }
 
-#hstry-p {
+#hstry-p{
     margin:4vw 0;
-    padding-left: 2vw;
-    border-left: 1vw solid #373867;
+    padding-left:2vw;
+    border-left:1vw solid #373867;
 }
 
-#hstry img {
+#hstry img{
     width:98%;
 }
 
-#hstry .container {
+#hstry .container{
     height:220vw;
 }
 
-.item:nth-child(3) {
+#hstry .container .section-title{
+    font-size:5.1vw;
+}
+
+.item:nth-child(3){
     order:1;
 }
 
-.item:nth-child(6) {
+.item:nth-child(5){
     order:2;
 }
 
+.item:nth-child(6){
+    order:3;
+}
+
+/*---------MEMBERS---------*/
+
+#members{
+    height:320vw;
+}
+
 #members .column{
-    justify-content: space-around;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
     height:150vw;
     padding:2vw 0;
 }
 
-#members .container {
-    justify-content: space-around;
-    height:300vw;
+#members .container{
+    justify-content:space-around;
+    height:320vw;
+}
+
+#members img{
+    width:32vw;
+}
+
+/*---------FOOTER---------*/
+
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    height:40vw;
+    margin:0 2vw;
+    padding:5vw 0 2vw 0;
+    border-top:1vw solid rgb(170, 206, 155);
+    font-size:3vw;
 }
 
 footer .logos{
@@ -202,139 +226,225 @@ footer .logos{
 }
 
 footer .logo{
-    width:15vw;
+    width:14vw;
 }
 
+/*---------------------TABLET---------------------*/
+
 @media only screen and (min-width: 601px){
-    body {
-        font-size: 2.3vw;
+    body{
+        font-size:1.7vw;
     }
 
-    main {
-        height:150vw;
+    .section-title{
+        font-size:3.6vw;
+    }
+
+    header{
+        height:8vw;
+    }
+
+    header button{
+        bottom:1vw;
+        width:4.8vw;
+        height:4.8vw;
+    }
+
+    .box img{
+        width:4.8vw;
+    }
+
+    header h2{
+        font-size:1.5vw;
+    }
+
+    header .logos{
+        width:14.4vw;
+    }
+
+    header .logo{
+        width:2.4vw;
+    }
+
+    main{
+        height:130vw;
         padding-bottom:0;
     }
 
-    ol {
-        width:38vw;
+    main .section-title{
+        font-size:4.8vw;
     }
 
-    .section-title {
-        font-size: 5vw;
+    #main-subtitle{
+        font-size:2.4vw;
     }
 
-    main p, #main-subtitle {
-        font-weight: normal;
+    main p, #main-subtitle{
+        font-weight:normal;
     }
 
-    main img {
+    main img{
         order:1;
         padding-top:5vw;
-        background-color: white;
     }
 
-    .feature h3 {
-        font-size: 6vw;
+    #app-features{
+        height:150vw;
     }
 
-    .feature {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    #app-features .section-title{
+        width:29vw;
+    }
+
+    #app-features .container{
+        height:120vw;
+    }
+
+    .feature img{
+        width:15.6vw;
+    }
+
+    .feature h3{
+        font-size:4.8vw;
+    }
+
+    .feature{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
         height:20vw;
+        margin-bottom:0;
     }
 
     .text-feature{
-        height:25vw;
-        width:65vw;
+        height:20vw;
+        width:72vw;
     }
     
     #contact{
         align-items:flex-start;
-        height:125vw;
+        height:100vw;
+        margin-top:3vw;
+    }
+
+    #contact .column{
+        align-items:flex-start;
     }
 
     #contact .container{
-        flex-direction: row;
-        align-items: flex-end;
-        margin: 0;
-        width:60vw;
-        height:20vw;
+        flex-direction:row;
+        align-items:flex-end;
+        margin:0;
+        width:40vw;
+        height:8vw;
     }
 
-    #hstry {
-        height:120vw;
+    input, select{
+        height:4.4vw;
+        margin-top:1vw;
+        border-radius:1vw;
+    }
+
+    input, select, textarea{
+        border-width:0.3vw;
+        font-size:1.7vw;
+    }
+
+    textarea{
+        height:15vw;
+    }
+
+    button{
+        width:17.3vw;
+        height:5.6vw;
+        margin-bottom:0vw;
+        font-size:1.7vw;
+    }
+
+    #hstry{
+        height:100vw;
     }
 
     #hstry .container{
-        flex-direction: row;
+        flex-direction:row;
         flex-wrap: wrap;
     }
 
     #hstry h2{
-        margin-top: 7vw;
-        text-align: center;
-
+        margin-top:7vw;
     }
 
-    #hstry img {
+    #hstry .container .section-title{
+        font-size:2.4vw;
+    }
+
+    #hstry img{
         width:48%;
     }
     
-    #hstry .container {
-        height:90vw;
-    }
-    
-    .item{
-        margin-top:4vw;
-    }
-
-    .item:nth-child(3) {
-        order:0;
+    #hstry .container{
+        height:70vw;
     }
 
     #members{
         height:120vw;
         width:100vw;
-        text-align: center;
+    }
+
+    #members img{
+        width:15.6vw;
+        margin:0 5vw;
     }
 
     #members .container{
-        flex-direction: row;
-        flex-wrap: wrap;
         height:120vw;
+        width:80vw;
     }
 
     #members .column{
-        height:50vw;
+        align-items:flex-start;
+        flex-wrap:wrap;
+        height:16vw;
         width:40vw;
     }
 
-    footer .logos{
-        justify-content: center;
-    }
-    footer {
-        height:20vw;
-        font-size:2vw;
+    ol{
+        width:38vw;
+        text-align:left;
     }
 
-    footer .logo {
-        width:8vw;
-        margin-left: 3vw;
+    footer .logos{
+        justify-content:center;
+    }
+    footer{
+        height:20vw;
+        font-size:1.5vw;
+    }
+
+    footer .logo{
+        width:6.5vw;
+        margin-left:3vw;
     }
 }
 
+/*---------------------DESKTOP---------------------*/
+
 @media only screen and (min-width:1025px){
-    header{
-        height:8vw;
-        padding-bottom:2vw;
-        align-items: flex-end;
-        font-size: 2vw;
-        border-width: 0.6vw;
+    .section-title{
+        font-size:2vw;
     }
 
-    .section-title{
-        font-size: 2vw;
+    .row .mobile-hide{
+        display:flex;
+    }
+    
+    header{
+        align-items:flex-end;
+        height:8vw;
+        padding-bottom:2vw;
+        border-width:0.6vw;
+        font-size:2vw;        
     }
 
     header button{
@@ -345,7 +455,7 @@ footer .logo{
         width:3vw;
     }
 
-    header .box,header .logos {
+    header .box,header .logos{
         height:3vw;
     }
 
@@ -358,56 +468,50 @@ footer .logo{
     }
 
     main{
-        justify-content: space-around;
+        justify-content:space-around;
         height:50vw;
         width:71vw;
         padding-left:2vw;
-        
-        font-size: 1.3vw;
-        color:white;
-        background-image: url(../../assets/imgs/people-working-out-inverted.png);
+        background-image:url(../../assets/imgs/people-working-out-inverted.png);
         background-repeat:no-repeat;
         background-size:cover;
+        font-size:1.3vw;
+        color:white;
     }
 
-    #desktop-main .container {
+    #desktop-main .container{
         margin:2vw 0;
-    }
-
-    .mobile-hide{
-        display:flex;
     }
 
     main .section-title{
         position:relative;
         top:3vw;
-        font-size: 2.6vw;
+        font-size:2.6vw;
         color:white;
     }
 
-    #main-subtitle {
+    #main-subtitle{
         position:relative;
         bottom:5vw;
         font-size:2vw;
     }
 
     main img{
-        display: none;
-        
+        display:none;
     }
 
     #main-paragraph{
         display:block;
         width:40vw;
-        line-height: 2vw;
+        line-height:2vw;
     }
 
     main button{
         display:block;
         order:1;
-        border-radius:0.5vw;
         width:10vw;
         height:3vw;
+        border-radius:0.5vw;
         font-size:1vw;
     }
 
@@ -418,68 +522,72 @@ footer .logo{
         background-color:rgba(170, 206, 155, 0.2);
     }
 
-    .sidebar {
+    .sidebar{
         display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction:column;
+        justify-content:space-between;
         height:50vw;
         width:25vw;
         padding:0 3vw;
-        font-weight: bold;
+        font-weight:bold;
     }
 
     .sidebar input{
-        border-width: 0.1vw;
-        border-radius: 0.6vw;
-        margin-top:2vw;
-        width: 16vw;
+        width:16vw;
         height:3vw;
-        font-size: 1.1vw;
-        color:rgba(55, 56, 103, 0.5);
+        margin-top:2vw;
         background-color:rgba(170, 206, 155, 0.1);
+        border-width:0.1vw;
+        border-radius:0.6vw;
+        font-size:1.1vw;
+        color:rgba(55, 56, 103, 0.5);        
     }
 
     nav{
-        flex-direction: column;
+        flex-direction:column;
         height:32vw;
     }
 
     .sidebar h2{
         max-width:10vw;
         margin:2vw 0;
-        font-size: 2vw;
-        font-weight: bold;
         border-bottom:0.2vw solid rgb(170, 206, 155);
+        font-size:2vw;
+        font-weight:bold;
     }
 
     nav li, #contact-us div{
         margin-bottom:1vw;
         padding:1.5vw 0;
         border-bottom:0.1vw solid #373867;
-        font-size: 1vw;
+        font-size:1vw;
     }
     #contact-us p, #contact-us a{
         display:inline;
         margin-left:1vw;
-        text-decoration: none;
         font-size:0.8vw;
-        color: #373867;
+        color:#373867;
+        text-decoration:none;
     }
 
     #contact-us{
-        flex-direction: column;
+        flex-direction:column;
         justify-content:space-around;
         height:20vw;
         font-size:0.8vw;
     }
     
+    #app-features{
+        height:50vw;
+    }
+
     #app-features h2{
         width:14vw;
-        border-width: 0.3vw;
+        border-width:0.3vw;
     }
 
     .feature h3{
-        font-size: 2.6vw;
+        font-size:2.6vw;
     }
 
     .text-feature{
@@ -490,11 +598,11 @@ footer .logo{
     }
 
     #app-features .container{
-        flex-direction: row;
+        flex-direction:row;
         flex-wrap:wrap;
-        margin:0 2vw;
         width:96vw;
         height:40vw;
+        margin:0;
     }
 
     .feature{
@@ -508,10 +616,6 @@ footer .logo{
         width:11.5vw;
     }
 
-    .row{
-        display:flex;
-    }
-
     #contact{
         height:50vw;
         margin:7vw 2vw;
@@ -519,19 +623,19 @@ footer .logo{
 
     #contact .column{
         width:32vw;
-        font-size: 1vw;
+        font-size:1vw;
     }
 
     input, select{
-        width: 30vw;
-        height: 2.5vw;
-        margin-top: 2vw;
-        border-radius: 0.5vw;
+        width:30vw;
+        height:2.5vw;
+        margin-top:2vw;
+        border-radius:0.5vw;
     }
 
     input, select, textarea{
-        font-size: 1vw;
-        border-width: 0.2vw;
+        border-width:0.2vw;
+        font-size:1vw;
     }
 
     select{
@@ -546,10 +650,10 @@ footer .logo{
     button {
         width:9vw;
         height:2.4vw;
-        margin-bottom: 0vw;
-        border-radius: 0.5vw;
+        margin-bottom:0vw;
+        border-radius:0.5vw;
         border-width:0.2vw;
-        font-size: 1vw;
+        font-size:1vw;
     }
 
     #contact .container{
@@ -558,29 +662,29 @@ footer .logo{
     }
 
     #hstry{
-        font-size: 1vw;
-        height:65vw;
+        font-size:1vw;
+        height:55vw;
     }
 
     #hstry h2{
-        text-align: left;
+        text-align:left;
     }
 
     #hstry-p{
-        border-width: 0.2vw;
-        padding-left: 1vw;
+        padding-left:1vw;
+        border-width:0.2vw;
     }
 
     #hstry h3{
-        font-size: 1.4vw;;
+        font-size:1.4vw;
     }
 
     #hstry .container{
-        flex-direction: column;
+        flex-direction:column;
         align-content:space-between;
-        margin:0;
         width:95vw;
-        height:40vw;
+        height:35vw;
+        margin:0;
         margin-right:3vw;
     }
 
@@ -589,31 +693,38 @@ footer .logo{
     }
 
     #members{
+        height:40vw;
         margin:5vw 0;
-        font-size: 1vw;
-        height:35vw;
+        font-size:1vw;
     }
 
     #members .container{
-        height:35vw;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        height:50vw;
+        width:95vw;
     }
 
     #members h2{
-        font-size: 2.6vw;
+        width:40vw;
+        font-size:2.6vw;
     }
 
     #members img{
-        width: 12vw;
+        width:11.5vw;
         margin-right:2vw;
+        margin-left:0;
     }
 
     #members .column{
-        flex-wrap: wrap;
-        align-items: flex-start;
+        flex-wrap:wrap;
+        align-items:flex-start;
         height:12vw;
+        width:40vw;
     }
 
-    ol {
+    ol{
         text-align:left;
     }
 
@@ -622,9 +733,9 @@ footer .logo{
     }
 
     footer{
-        font-size: 1vw;
         height:10vw;
-        border-width: 0.6vw;
+        border-width:0.6vw;
+        font-size:1vw;
     }
 
     footer .logo{
