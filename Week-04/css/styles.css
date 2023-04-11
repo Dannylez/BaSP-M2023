@@ -4,7 +4,7 @@ body {
     font-size: 4vw;
 }
 
-.mobile-hide {
+.mobile-hide, .btn-hide{
     display:none;
 }
 
@@ -38,6 +38,7 @@ select{
   
 textarea {
     height: 24vw;
+    width:94vw;
 }
 
 button {
