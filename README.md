@@ -1,5 +1,4 @@
-![Titulo Radium Rocket](assets/imgs/titulo-rr.png)
-
+![Titulo Radium Rocket](assets/imgs/titulo-rr.png) ![Alt text](assets/imgs/logo-rr.png)
 # Become a Software Professional 2023
 This is my repository for the bootcamp of Radium Rocket: Become a Software Professional 2023 edition.
 In the next weeks we will be working on a project named "Mega Rocket's Gym".
