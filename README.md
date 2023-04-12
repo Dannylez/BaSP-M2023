@@ -1,4 +1,6 @@
 # Become a Software Professional 2023
+![Logo Radium Rocket](assets/imgs/logo-rr.png)
+[Titulo Radium Rocket](assets/imgs/titulo-rr.png)
 This is my repository for the bootcamp of Radium Rocket: Become a Software Professional 2023 edition.
 In the next weeks we will be working on a project named "Mega Rocket's Gym".
 The idea of this project is to create a functional webpage for a gym in which both members and trainers feel comfortable using it.
@@ -16,3 +18,5 @@ This time I'll be working on the styles of the structure created last week using
 This task consists of recreating the landing page styles again but with a responsive model taking priority on the mobile model (mobile first).
 We will also be working on a new github feature called github pages, wich allows you to view the repository online, without having to download the content.
 The Github pages for this week can be found on: https://dannylez.github.io/BaSP-M2023/Week-04/index.html .
+
+![Logo Radium Rocket](assets/imgs/logo-rr.png)![Titulo Radium Rocket](assets/imgs/titulo-rr.png)
