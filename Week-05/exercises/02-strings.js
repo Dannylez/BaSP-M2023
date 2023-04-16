@@ -41,8 +41,8 @@ algún espacio en blanco. Encontrar la posición del primer espacio en
 blanco y guardarla en una variable (utilizar indexOf). */
 
 console.log('-Exercise 2.e:');
-let sentence='Mi mamá me mima';
-let firstBlank=sentence.indexOf(' ');
+let moreWords='Mi mamá me mima';
+let firstBlank=moreWords.indexOf(' ');
 console.log(firstBlank);
 
 /* f. Crear una variable de tipo string con al menos 2 palabras largas 
