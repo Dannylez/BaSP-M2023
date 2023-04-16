@@ -22,11 +22,11 @@ The Github pages for this week can be found on: https://dannylez.github.io/BaSP-
 On this week I had to perform javascript exercises showing the results in the console and in alerts.
 The exercises contained concepts such as:
 <ol>
-    <il>Variables and operators.</il>
-    <il>Strings.</il>
-    <il>Arrays.</il>
-    <il>If else.</il>
-    <il>For loops.</il>
-    <il>Functions.</il>
+    <li>Variables and operators.</li>
+    <li>Strings.</li>
+    <li>Arrays.</li>
+    <li>If else.</li>
+    <li>For loops.</li>
+    <li>Functions.</li>
 </ol>
 The Github pages for this week can be found on: https://dannylez.github.io/BaSP-M2023/Week-05/index.html .
