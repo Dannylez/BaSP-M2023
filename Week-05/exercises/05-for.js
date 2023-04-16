@@ -5,12 +5,12 @@ utilizando un bucle for de JavaScript para mostrar una alerta
 utilizando cada una de las palabras. */
 
 console.log('-Exercise 5.a:');
-let words = ['manzana','frutilla','banana','naranja','limón'];
+var words = ['manzana','frutilla','banana','naranja','limón'];
 for(i=0; i<words.length; i++) {
     alert(words[i]);
 }
 
-/* b. Al array anterior convertir la primera letra de cada palabra
+/* b. Al array anterior convertir la primera varra de cada palabra
 en mayúscula y mostrar una alerta por cada palabra modificada. */
 
 console.log('-Exercise 5.b:');
@@ -22,10 +22,10 @@ for(i=0; i<words.length; i++) {
 /* c. Crear una variable llamada “sentence” que tenga un string vacío,
 luego al array del punto a) recorrerlo con un bucle for para ir
 guardando cada palabra dentro de la variable sentence. Al final mostrar
-una única alerta con la cadena completa. */
+una única alerta con la cadena compvara. */
 
 console.log('-Exercise 5.c:');
-let sentence = '';
+var sentence = '';
 for(i=0; i<words.length; i++) {
     sentence=sentence + words[i];
 }
@@ -38,7 +38,7 @@ desde el número 0 hasta al número 9. Mostrar por la consola del navegador
 el array final (utilizar console.log). */
 
 console.log('-Exercise 5.d:');
-let array = [];
+var array = [];
 for(i=0; i<10; i++) {
     array.push(i);
 }

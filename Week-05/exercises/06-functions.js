@@ -8,9 +8,9 @@ console.log('-Exercise 6.a:');
 function suma(n1,n2) {
     return n1+n2;
 }
-let resultadoA = suma(3,5);
+var resultadoA = suma(3,5);
 console.log(resultadoA);
-console.log(typeof(resultadoA))
+console.log(typeof(resultadoA));
 
 /* b. Copiar la función suma anterior y agregarle una validación para
 controlar si alguno de los parámetros no es un número; de no ser un número,
@@ -26,7 +26,7 @@ function suma(n1,n2) {
         return NaN;
     }
 }
-let resultadoB = suma('b', 6)
+var resultadoB = suma('b', 6);
 console.log(resultadoB);
 
 /* c. Crear una función “validateInteger” que reciba un número como parámetro y
@@ -78,7 +78,7 @@ function validation(n1,n2) {
     }
 }
 function sumWithValidation(n1,n2){
-    var val = validation(n1,n2)
+    var val = validation(n1,n2);
     if (val=='ok'){
         return n1+n2;
     }else if (val=='not ok') {
