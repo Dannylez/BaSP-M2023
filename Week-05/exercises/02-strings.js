@@ -27,7 +27,7 @@ var lastThree = wordC.substring(wordC.length-3);
 console.log(lastThree);
 
 /* d. Crear una variable de tipo string con al menos 10 caracteres y
-generar un nuevo string con la primera varra en mayúscula y las demás
+generar un nuevo string con la primera letra en mayúscula y las demás
 en minúscula. Guardar el resultado en una nueva variable (utilizar
 substring, toUpperCase, toLowerCase y el operador +). */
 
@@ -48,7 +48,7 @@ console.log(firstBlank);
 /* f. Crear una variable de tipo string con al menos 2 palabras largas
 (10 caracteres y algún espacio entre medio). Utilizar los métodos de
 los ejercicios anteriores para generar un nuevo string que tenga la
-primera varra de ambas palabras en mayúscula y las demás varras en
+primera letra de ambas palabras en mayúscula y las demás letras en
 minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el
 operador +). */
 

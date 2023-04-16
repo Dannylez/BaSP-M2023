@@ -30,50 +30,6 @@
     background-color:rgb(170, 206, 155);
 }
 
-/*---------HEADER---------*/
-
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:13.3vw;
-    margin:0 2vw;
-    border-bottom:1vw solid rgb(170, 206, 155);
-    font-size:3vw;
-    font-weight:bold;
-    color:rgba(55, 56, 103, 0.4);
-}
-
-.box {
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    height:13.3vw;
-}
-
-header button{
-    position:relative;
-    bottom:2vw;
-    margin-bottom:2vw;
-    padding:0;
-    width:10.7vw;
-    border:none;
-}
-
-.box img {
-    width:10.7vw;
-}
-
-.logos {
-    display:flex;
-    justify-content:space-between;
-    width:40%;
-}
-
-.logo {
-    width:5vw;
-}
-
 /*---------MAIN---------*/
 
 main {
@@ -208,29 +164,6 @@ form h2{
 
 #members img{
     width:32vw;
-}
-
-/*---------FOOTER---------*/
-
-footer{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    height:40vw;
-    margin:0 2vw;
-    padding:5vw 0 2vw 0;
-    border-top:1vw solid rgb(170, 206, 155);
-    font-size:3vw;
-}
-
-footer .logos{
-    margin:0 2vw;
-    width:92vw;
-}
-
-footer .logo{
-    width:14vw;
 }
 
 /*---------------------TABLET---------------------*/
