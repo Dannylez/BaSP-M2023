@@ -1,4 +1,4 @@
-console.log('--EXERCISE 3: IF ELSE');
+console.log('--EXERCISE 4: IF ELSE');
 
 /* a. Crear un número aleatorio entre 0 y 1 utilizando la función
 Math.random(), si el valor es mayor o igual que 0,5 mostrar una
