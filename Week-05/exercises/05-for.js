@@ -27,7 +27,7 @@ una única alerta con la cadena completa. */
 console.log('-Exercise 5.c:');
 var sentence = '';
 for(i=0; i<words.length; i++) {
-    sentence=sentence + words[i];
+    sentence = sentence + words[i];
 }
 alert(sentence);
 

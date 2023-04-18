@@ -16,7 +16,7 @@ This time I'll be working on the styles of the structure created last week using
 ## Week 04
 This task consists of recreating the landing page styles again but with a responsive model taking priority on the mobile model (mobile first).
 We will also be working on a new github feature called github pages, wich allows you to view the repository online, without having to download the content.
-The Github pages for this week can be found on:<a href="https://dannylez.github.io/BaSP-M2023/Week-04/index.html">Github pages Week-04</a>.
+The Github pages for this week can be found on: https://dannylez.github.io/BaSP-M2023/Week-04/index.html" .
 
 ## Week 05
 On this week I had to perform javascript exercises showing the results in the console and in alerts.
@@ -29,4 +29,4 @@ The exercises contained concepts such as:
     <li>For loops.</li>
     <li>Functions.</li>
 </ol>
-The Github pages for this week can be found on: <a href="https://dannylez.github.io/BaSP-M2023/Week-05/index.html">Github pages Week-05</a>.
+The Github pages for this week can be found on: https://dannylez.github.io/BaSP-M2023/Week-05/index.html .
