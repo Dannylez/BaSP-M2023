@@ -25,6 +25,7 @@ function sum(n1,n2) {
         return NaN;
     }
 }
+console.log(sum(2.8,"abc"));
 
 /* c. Crear una función “validateInteger” que reciba un número como parámetro y
 devuelva verdadero si es un número entero. */
@@ -37,6 +38,8 @@ function validateInteger(number) {
         return false
     }
 }
+console.log(validateInteger(3.4));
+console.log(validateInteger(3));
 
 /* d. Copiar y renombrar la función suma del ejercicio 6b) y agregarle una llamada
 a la función del ejercicio 6c. y que valide que los números sean enteros. En caso que
@@ -57,6 +60,8 @@ function sumInteger(n1,n2) {
         return NaN;
     }
 }
+console.log(sumInteger(1.4,2));
+console.log(sumInteger("abc",1.4));
 
 /* e. Convertir la validación del ejercicio 6d) en una función separada y
 llamarla dentro de una nueva función probando que todo siga funcionando igual
@@ -86,3 +91,5 @@ function sumWithValidation(n1,n2){
         return NaN;
     }
 }
+console.log(sumWithValidation(1.4,2));
+console.log(sumWithValidation("abc",1.4));

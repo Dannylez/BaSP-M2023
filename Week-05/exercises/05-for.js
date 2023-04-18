@@ -9,6 +9,7 @@ var words = ['manzana','frutilla','banana','naranja','limón'];
 for(i=0; i<words.length; i++) {
     alert(words[i]);
 }
+console.log(words);
 
 /* b. Al array anterior convertir la primera letra de cada palabra
 en mayúscula y mostrar una alerta por cada palabra modificada. */
@@ -18,6 +19,7 @@ for(i=0; i<words.length; i++) {
     words[i]=words[i].substring(0,1).toUpperCase() + words[i].substring(1);
     alert(words[i]);
 }
+console.log(words);
 
 /* c. Crear una variable llamada “sentence” que tenga un string vacío,
 luego al array del punto a) recorrerlo con un bucle for para ir
@@ -30,6 +32,7 @@ for(i=0; i<words.length; i++) {
     sentence = sentence + words[i];
 }
 alert(sentence);
+console.log(sentence);
 
 /* d. Crear un array vacío y con un bucle for de 10 repeticiones.
 Llenar el array con el número de la repetición, es decir que al final de
