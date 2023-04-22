@@ -1,0 +1,51 @@
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    height:40vw;
+    margin:0 2vw;
+    padding:5vw 0 2vw 0;
+    border-top:1vw solid rgb(170, 206, 155);
+    font-size:3vw;
+    background-color:white;
+}
+
+footer .logos{
+    margin:0 2vw;
+    width:92vw;
+}
+
+footer .logo{
+    width:14vw;
+}
+
+@media only screen and (min-width: 601px){
+
+    footer .logos{
+        justify-content:center;
+    }
+    footer{
+        height:20vw;
+        font-size:1.5vw;
+    }
+
+    footer .logo{
+        width:6.5vw;
+        margin-left:3vw;
+    }
+}
+
+@media only screen and (min-width:1025px){
+
+    footer{
+        height:10vw;
+        border-width:0.6vw;
+        font-size:1vw;
+    }
+
+    footer .logo{
+        width:3.7vw;
+    }
+}
+
