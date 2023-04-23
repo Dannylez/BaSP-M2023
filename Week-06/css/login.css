@@ -33,15 +33,26 @@ body {
 .login-input {
     display:flex;
     justify-content:space-between;
+    align-content: flex-start;
     flex-wrap:wrap;
-    margin:4vw 0;
+    margin-bottom:7vw;
     width:55vw;
+    height:15vw;
 }
 
 #login-form img{
     height:5vw;
     margin:0;
 }
+
+label {
+    height:7vw;
+}
+
+::placeholder{
+    font-size:3.6vw;
+}
+
 
 input{
     height:5vw;

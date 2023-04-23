@@ -33,6 +33,64 @@ button{
     border:none;
     background-color:rgb(170, 206, 155);
 }
+/*---------SIDEBAR---------*/
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:0 2vw;
+    padding:0 3vw;
+    background-color:rgba(170, 206, 155, 0.1);
+    font-weight:bold;
+}
+
+.sidebar input{
+    width:80vw;
+    height:8.5vw;
+    margin-top:2vw;
+    background-color:rgba(170, 206, 155, 0.1);
+    border-width:0.1vw;
+    border-radius:0.6vw;
+    color:rgba(55, 56, 103, 0.5);        
+}
+
+nav{
+    flex-direction:column;
+    height:80vw;
+}
+
+.sidebar h2{
+    max-width:40vw;
+    margin:5vw 0;
+    border-bottom:0.2vw solid rgb(170, 206, 155);
+    font-weight:bold;
+    font-size: 8vw;
+}
+
+nav li, #contact-us div{
+    margin-bottom:5vw;
+    padding:1.5vw 0;
+    border-bottom:0.1vw solid #373867;
+}
+
+nav a {
+    color:#373867;
+    text-decoration:none;
+}
+
+#contact-us p, #contact-us a{
+    display:inline;
+    margin-left:1vw;
+    color:#373867;
+    text-decoration:none;
+}
+
+#contact-us{
+    flex-direction:column;
+    justify-content:space-around;
+    height:70vw;
+}
+
 
 /*---------MAIN---------*/
 
@@ -205,30 +263,29 @@ form h2{
         font-size:3.6vw;
     }
 
-    header{
-        height:8vw;
+    .sidebar input{
+        height:6vw;
     }
-
-    header button{
-        bottom:1vw;
-        width:4.8vw;
-        height:4.8vw;
+    
+    nav{
+        height:60vw;
     }
-
-    .box img{
-        width:4.8vw;
+    
+    .sidebar h2{
+        max-width:40vw;
     }
-
-    header h2{
-        font-size:1.5vw;
+    
+    nav li, #contact-us div{
+        margin-bottom:3vw;
+        font-size: 2.5vw;
     }
-
-    header .logos{
-        width:14.4vw;
+    
+    #contact-us p, #contact-us a{
+        font-size: 2.5vw
     }
-
-    header .logo{
-        width:2.4vw;
+    
+    #contact-us{
+        height:55vw;
     }
 
     main{
@@ -396,46 +453,44 @@ form h2{
 /*---------------------DESKTOP---------------------*/
 
 @media only screen and (min-width:1025px){
-    .section-title{
-        font-size:2vw;
-    }
-
-    .row {
-        display:flex;
+    .sidebar{
+        height:50vw;
+        width:25vw;
     }
     
-    .mobile-hide{
-        display:flex;
-    }
-    
-    header{
-        align-items:flex-end;
-        height:8vw;
-        padding-bottom:2vw;
-        border-width:0.6vw;
-        font-size:2vw;        
-    }
-
-    header button{
-        display:none;
-    }
-
-    header .logo{
-        width:3vw;
-    }
-
-    header .box,header .logos{
+    .sidebar input{
+        width:16vw;
         height:3vw;
+        font-size:1.1vw;
     }
-
-    header .logos{
-        width:22vw;
+    
+    nav{
+        height:32vw;
     }
-
-    .logo:nth-child(2){
-        order:-1;
+    
+    .sidebar h2{
+        max-width:10vw;
+        margin:2vw 0;
+        font-size:2vw;
+        font-weight:bold;
     }
-
+    
+    nav li, #contact-us div{
+        margin-bottom:1vw;
+        font-size:1vw;
+    }
+    
+    #contact-us p, #contact-us a{
+        font-size:0.8vw;
+    }
+    
+    #contact-us{
+        flex-direction:column;
+        justify-content:space-around;
+        height:20vw;
+        font-size:0.8vw;
+    }
+    
     main{
         justify-content:space-around;
         height:50vw;
@@ -493,60 +548,7 @@ form h2{
         background-color:rgba(170, 206, 155, 0.2);
     }
 
-    .sidebar{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        height:50vw;
-        width:25vw;
-        padding:0 3vw;
-        font-weight:bold;
-    }
-
-    .sidebar input{
-        width:16vw;
-        height:3vw;
-        margin-top:2vw;
-        background-color:rgba(170, 206, 155, 0.1);
-        border-width:0.1vw;
-        border-radius:0.6vw;
-        font-size:1.1vw;
-        color:rgba(55, 56, 103, 0.5);        
-    }
-
-    nav{
-        flex-direction:column;
-        height:32vw;
-    }
-
-    .sidebar h2{
-        max-width:10vw;
-        margin:2vw 0;
-        border-bottom:0.2vw solid rgb(170, 206, 155);
-        font-size:2vw;
-        font-weight:bold;
-    }
-
-    nav li, #contact-us div{
-        margin-bottom:1vw;
-        padding:1.5vw 0;
-        border-bottom:0.1vw solid #373867;
-        font-size:1vw;
-    }
-    #contact-us p, #contact-us a{
-        display:inline;
-        margin-left:1vw;
-        font-size:0.8vw;
-        color:#373867;
-        text-decoration:none;
-    }
-
-    #contact-us{
-        flex-direction:column;
-        justify-content:space-around;
-        height:20vw;
-        font-size:0.8vw;
-    }
+    
     
     #app-features{
         height:50vw;

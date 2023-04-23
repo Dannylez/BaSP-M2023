@@ -16,7 +16,7 @@
     <body>
         <header>
             <div class="box">
-                <button>
+                <button id="burger">
                 <img src="../../assets/imgs/header-menu.svg" alt="Menu icon">
                 </button>
                 <h2>Mega Rocket</h2>
@@ -31,17 +31,17 @@
         </header>
         <div id="desktop-main">
             <div class="sidebar">
-                <nav class="mobile-hide">
+                <nav class="hidden mobile-hide">
                     <input type="search" placeholder="Search">
                     <h2>Menu</h2>
                     <ul>
                     <li>Home</li>
-                        <li>Sign Up</li>
-                        <li>Log In</li>
+                        <li><a href="../views/sign-up.html">Sign Up</a></li>
+                        <li><a href="../views/login.html">Log In</a></li>
                         <li>Contact Information</li>
                     </ul>
                 </nav>
-                <div id="contact-us" class="mobile-hide">
+                <div id="contact-us" class="hidden mobile-hide">
                     <h2>Contact us</h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus expedita
@@ -277,5 +277,6 @@
                 Copyright &copy; 2022 Radium rocket. All rights reserved.
             </p>
         </footer>
+        <script src="../js/landing.js"></script>
     </body>
 </html>

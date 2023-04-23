@@ -1,0 +1,92 @@
+body {
+    background-color:#d9d9d9;
+}
+
+.container {
+    display:flex;
+    width:96vw;
+    margin:0 auto;
+    background-color:white;
+}
+
+.card {
+    display:flex;
+    width:88vw;
+    margin:auto;
+    padding:2vw;
+    border:0.5vw solid #EBEBEB;
+    border-radius: 2vw;
+}
+
+#sign-up-title{
+    font-weight: normal;
+    font-size: 5vw;
+    margin:5vw;
+}
+
+#login-container {
+    height:250vw;
+}
+
+
+#login-form {
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:240vw;
+}
+
+.login-input {
+    display:flex;
+    justify-content:space-between;
+    align-content: flex-start;
+    flex-wrap:wrap;
+    margin-bottom:7vw;
+    width:80vw;
+    height:15vw;
+}
+
+#membership-div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width:80vw;
+}
+
+.radio-label{
+    width:55vw;
+    height:5vw;
+}
+
+#login-form img{
+    height:5vw;
+    margin:0;
+}
+
+label {
+    height:7vw;
+}
+
+::placeholder{
+    font-size:3.6vw;
+}
+
+
+input{
+    height:8.5vw;
+    width:75vw;
+    border-radius:1vw;
+    border-width:0.2vw;
+}
+
+.border-red {
+    border: 1vw solid red;
+}
+
+.text-alert {
+    align-self: baseline;
+    color:red;
+    font-weight:bold;
+    font-size:3vw;
+}

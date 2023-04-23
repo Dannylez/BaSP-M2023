@@ -33,25 +33,42 @@ function isValidPassword(password) {
   return tieneMayuscula && tieneMinuscula && tieneNumero;
 }
 
+function isValidEmail(email) {
+  const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+  return emailExpression.test(email);
+}
+
+console.log(isValidEmail("danas@aksjd.com"));
+
 function signIn(e) {
   e.preventDefault();
-  const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-  const isValidEmail = emailExpression.test(inputEmail.value);
-  if (isValidEmail && isValidPassword(inputPass.value)) {
+  if (isValidEmail(inputEmail.value) && isValidPassword(inputPass.value)) {
     console.log("YEEES");
   } else {
-    const emailError = document.createElement("p");
-    emailError.innerText = "Not valid email";
-    emailError.className = "text-alert";
-    inputs[0].appendChild(emailError);
-    const passError = document.createElement("p");
-    passError.innerText =
-      "Password must include a mix of uppercase, lowercase numbers and be at least 8 characteres long.";
-    passError.className = "text-alert";
-    inputs[1].appendChild(passError);
-    inputEmail.classList = "border-red";
-    inputPass.classList = "border-red";
+    if (!isValidEmail(inputEmail.value)) {
+      createError("email");
+    }
+    if (!isValidPassword(inputPass.value)) {
+      createError("password");
+    }
     alert("Email or Password incorrect");
+  }
+}
+
+function createError(input) {
+  const alertError = document.createElement("p");
+  alertError.className = "text-alert";
+  if (input === "email") {
+    inputEmail.classList = "border-red";
+    alertError.innerText = "Not valid email";
+    if (inputEmail.parentNode.children.length <= 3)
+      inputs[0].appendChild(alertError);
+  } else if (input === "password") {
+    inputPass.classList = "border-red";
+    alertError.innerText =
+      "Password must include a mix of uppercase, lowercase numbers and be at least 8 characteres long.";
+    if (inputPass.parentNode.children.length <= 3)
+      inputs[1].appendChild(alertError);
   }
 }
 

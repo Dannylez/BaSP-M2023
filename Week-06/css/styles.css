@@ -29,9 +29,13 @@ input, select, textarea{
     color:rgba(55, 56, 103, 0.5);
 }
 
+input[type="radio"]{
+    width:5vw;
+    margin:4vw;
+}
+
 ::placeholder{
     color:rgba(55, 56, 103, 0.5);
-    font-size:3.6vw;
 }
 
 button{
@@ -42,6 +46,11 @@ button{
     border:0.3vw solid #373867;
     background-color:white;
     color:#373867;
+}
+
+button a {
+    color:#373867;
+    text-decoration:none;
 }
 
 /*---------LISTS---------*/
