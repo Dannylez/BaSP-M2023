@@ -2,17 +2,6 @@ var inputEmail = document.getElementById("input-email");
 var inputPass = document.getElementById("input-password");
 var form = document.getElementById("login-form");
 var inputs = document.querySelectorAll(".login-input");
-console.log(inputs);
-/* function changeColor() {
-  if (self.inputEmail.style.backgroundColor == "white") {
-    inputEmail.style.backgroundColor = "blue";
-  } else {
-    inputEmail.style.backgroundColor = "white";
-  }
-} */
-
-/* inputEmail.addEventListener("blur", changeColor);
-inputEmail.addEventListener("focus", changeColor); */
 
 function isValidPassword(password) {
   if (password.length < 8) {
@@ -37,8 +26,6 @@ function isValidEmail(email) {
   const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
   return emailExpression.test(email);
 }
-
-console.log(isValidEmail("danas@aksjd.com"));
 
 function signIn(e) {
   e.preventDefault();

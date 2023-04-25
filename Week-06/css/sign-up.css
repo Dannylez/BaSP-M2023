@@ -11,7 +11,7 @@ body {
 
 .card {
     display:flex;
-    width:88vw;
+    width:84vw;
     margin:auto;
     padding:2vw;
     border:0.5vw solid #EBEBEB;
@@ -24,19 +24,19 @@ body {
     margin:5vw;
 }
 
-#login-container {
-    height:250vw;
+#sign-up-container {
+    height:300vw;
 }
 
 
-#login-form {
+#sign-up-form {
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    height:240vw;
+    height:290vw;
 }
 
-.login-input {
+.sign-up-input {
     display:flex;
     justify-content:space-between;
     align-content: flex-start;
@@ -54,34 +54,32 @@ body {
     width:80vw;
 }
 
-.radio-label{
-    width:55vw;
-    height:5vw;
-}
-
-#login-form img{
-    height:5vw;
-    margin:0;
-}
-
 label {
     height:7vw;
 }
-
-::placeholder{
-    font-size:3.6vw;
-}
-
 
 input{
     height:8.5vw;
     width:75vw;
     border-radius:1vw;
     border-width:0.2vw;
+    font-size: 3vw;
 }
 
+#password-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:40vw;
+}
+
+#password-div label{
+    height:4vw;
+}
+
+
 .border-red {
-    border: 1vw solid red;
+    border: 0.5vw solid red;
 }
 
 .text-alert {
@@ -89,4 +87,89 @@ input{
     color:red;
     font-weight:bold;
     font-size:3vw;
+}
+
+@media only screen and (min-width: 601px){
+    body{
+        font-size: 3vw;
+    }
+
+    .section-title{
+        font-size:5vw;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    body {
+        font-size:1.7vw;
+    }
+
+    .section-title{
+        width:80vw;
+        font-size:3vw;
+        text-align:center;
+    }
+    
+    #sign-up-title{
+        font-size:3vw;
+        margin:3vw;
+    }
+
+    #sign-up-container{
+        height:130vw;
+    }
+
+    #sign-up-form{
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:120vw;
+    }
+
+    input{
+        height:4vw;
+        width:35vw;
+        font-size: 1.7vw;
+    }
+
+    label{
+        width:20vw;
+        height:2vw;
+    }
+
+    .sign-up-input{
+        height:10vw;
+        width:40vw;
+        margin:0
+    }
+
+    #password-div{
+        display: flex;
+        flex-direction: row;
+        height:10vw;
+        width:84vw;
+    }
+    
+    #password-div label{
+        height:2vw;
+        width:40vw;
+    }
+
+    #sign-up-buttons{
+        display:flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        width:50vw;
+    }
+
+    #required-fields{
+        width:80vw;
+        text-align: center;
+    }
+
+    button{
+        width:15vw;
+        height:5vw;
+        margin-top:2vw;
+        font-size:2vw;
+    }
 }

@@ -49,20 +49,16 @@ label {
     height:7vw;
 }
 
-::placeholder{
-    font-size:3.6vw;
-}
-
-
 input{
     height:5vw;
     width:45vw;
     border-radius:1vw;
     border-width:0.2vw;
+    font-size:3vw;
 }
 
 .border-red {
-    border: 1vw solid red;
+    border: 0.5vw solid red;
 }
 
 .text-alert {

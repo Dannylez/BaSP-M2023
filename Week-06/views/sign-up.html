@@ -27,45 +27,58 @@
             <img class="logo" alt="Github Logo" src="../../assets/imgs/github-logo.png">
         </div>
     </header>
-    <div id="login-container" class="container">
-        <form id="login-form" class="card">
+    <div id="sign-up-container" class="container">
+        <form id="sign-up-form" class="card">
             <h1 class="section-title">Mega Rocket</h1>
             <h2 id="sign-up-title" class="section-title">Sign up</h2>
-            <div id="name-div" class="login-input">
+            <div id="name-div" class="sign-up-input">
                 <label>Name*</label>
                 <input id="input-name" type="text" placeholder="First Name">
             </div>
-            <div id="last-name-div" class="login-input">
+            <div id="last-name-div" class="sign-up-input">
                 <label>Last name*</label>
                 <input id="input-last-name" type="text" placeholder="Last Name">
             </div>
-            <div id="email-div" class="login-input">
-                <label>Email*</label>
-                <input id="input-email" type="text" placeholder="E-mail">
+            <div id="dni-div" class="sign-up-input">
+                <label>DNI*</label>
+                <input id="input-dni" type="text" placeholder="DNI">
             </div>
-            <div id="phone-div" class="login-input">
+            <div id="birth-div" class="sign-up-input">
+                <label>Birthday*</label>
+                <input id="input-birth" type="date">
+            </div>
+            <div id="phone-div" class="sign-up-input">
                 <label>Phone Number*</label>
                 <input id="input-phone" type="text" placeholder="+549 3413 380 888">
             </div>
-            <div id="membership-div">
-                <label>Membership*</label>
-                <input type="radio" name="membership">
-                <label class="radio-label">Black</label>
-                <input type="radio" name="membership">
-                <label class="radio-label">Classic</label>
-                <input type="radio" name="membership">
-                <label class="radio-label">Only classes</label>
+            <div id="adress-div" class="sign-up-input">
+                <label>Adress*</label>
+                <input id="input-adress" type="text" placeholder="123 Fake Street">
             </div>
-            <div id="password-div" class="login-input">
-                <label>Password*</label>
-                <input id="input-password" type="password" placeholder="**********">
+            <div id="location-div" class="sign-up-input">
+                <label>Location*</label>
+                <input id="input-location" type="text" placeholder="Your Location">
             </div>
-            <div id="r-password-div" class="login-input">
-                <label>Repeat Password*</label>
-                <input id="input-r-password" type="password" placeholder="**********">
+            <div id="postal-div" class="sign-up-input">
+                <label>Postal Code*</label>
+                <input id="input-postal" type="text" placeholder="Postal code">
             </div>
-            <p>* Indicates a required field</p>
-            <div id="login-buttons">
+            <div id="email-div" class="sign-up-input">
+                <label>Email*</label>
+                <input id="input-email" type="text" placeholder="E-mail">
+            </div>
+            <div id="password-div">
+                <div class="sign-up-input">
+                    <label>Password*</label>
+                    <input id="input-password" type="password" placeholder="**********">
+                </div>
+                <div class="sign-up-input">
+                    <label>Repeat Password*</label>
+                    <input id="input-r-password" type="password" placeholder="**********">
+                </div>
+            </div>
+            <p id="required-fields">* Indicates a required field</p>
+            <div id="sign-up-buttons">
                 <button><a href="../views/index.html">Home</a></button>
                 <button type="submit">Sign in</button>
             </div>
