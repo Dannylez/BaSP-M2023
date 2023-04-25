@@ -36,6 +36,7 @@ header button{
     display:flex;
     justify-content:space-between;
     width:40%;
+    margin-right:5vw;
 }
 
 .logo {
@@ -72,6 +73,7 @@ button{
     }
 
     header h2{
+        margin-left:2vw;
         font-size:1.5vw;
     }
 
@@ -100,6 +102,7 @@ button{
     header{
         align-items:flex-end;
         height:4vw;
+        width:100vw;
         padding-bottom:2vw;
         border-width:0.6vw;
         font-size:2vw;        

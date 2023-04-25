@@ -27,10 +27,33 @@ function isValidEmail(email) {
   return emailExpression.test(email);
 }
 
+function validateEmail(e) {
+  if (!isValidEmail(e.target.value)) {
+    const alertError = document.createElement("p");
+    alertError.className = "text-alert";
+    inputEmail.classList = "border-red";
+    alertError.innerText = "Not valid email";
+    if (inputEmail.parentNode.children.length <= 3)
+      inputs[0].appendChild(alertError);
+  }
+}
+
+function validatePass(e) {
+  if (!isValidPassword(e.target.value)) {
+    const alertError = document.createElement("p");
+    alertError.className = "text-alert";
+    inputPass.classList = "border-red";
+    alertError.innerText =
+      "Password must include a mix of uppercase, lowercase numbers and be at least 8 characteres long.";
+    if (inputPass.parentNode.children.length <= 3)
+      inputs[1].appendChild(alertError);
+  }
+}
+
 function signIn(e) {
   e.preventDefault();
   if (isValidEmail(inputEmail.value) && isValidPassword(inputPass.value)) {
-    console.log("YEEES");
+    alert("Logged in succesfully");
   } else {
     if (!isValidEmail(inputEmail.value)) {
       createError("email");
@@ -69,4 +92,6 @@ function cleanInput(e) {
 
 inputEmail.addEventListener("focus", cleanInput);
 inputPass.addEventListener("focus", cleanInput);
+inputEmail.addEventListener("blur", validateEmail);
+inputPass.addEventListener("blur", validatePass);
 form.addEventListener("submit", signIn);

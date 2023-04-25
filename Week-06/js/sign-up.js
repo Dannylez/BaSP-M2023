@@ -1,16 +1,5 @@
-/* var inputName = document.getElementById("input-name");
-var inputLastName = document.getElementById("input-last-name");
-var inputDni = document.getElementById("input-dni");
-var inputBirth = document.getElementById("input-birth");
-var inputPhone = document.getElementById("input-phone");
-var inputAdress = document.getElementById("input-adress");
-var inputLocation = document.getElementById("input-location");
-var inputPostal = document.getElementById("input-postal");
-var inputEmail = document.getElementById("input-email");
-var inputPass = document.getElementById("input-password");
-var inputRePass = document.getElementById("input-r-password"); */
-
 var inputs = document.querySelectorAll("input");
+var form = document.getElementById("sign-up-form");
 
 function isOnlyNumbers(string) {
   for (i = 0; i < string.length; i++) {
@@ -29,7 +18,7 @@ function isOnlyLetters(string) {
         (
           (code >= 65 && code <= 90) || //Uppercase
           (code >= 97 && code <= 122) || //Lowercase
-          code === " "
+          code === 32
         ) //spaces
       )
     ) {
@@ -58,6 +47,8 @@ function isAlphaNumeric(string) {
   return true;
 }
 
+console.log(new Date().getMonth());
+
 //Validates Name and Last name inputs
 function isValidName(name) {
   return name.length > 3 && isOnlyLetters(name);
@@ -70,8 +61,22 @@ function isValidDni(dni) {
 
 //Validates Birthday input
 function isValidDate(date) {
-  var year = date.split("-")[0];
-  return year <= 2010 && year >= 1900;
+  var today = new Date();
+  var actualDay = today.getDate();
+  var actualMonth = today.getMonth();
+  var actualYear = today.getFullYear();
+  var dateArray = date.split("-");
+  var day = dateArray[2];
+  var month = dateArray[1];
+  var year = dateArray[0];
+  if (
+    (year < actualYear - 12 && year > actualYear - 112) ||
+    (year == actualYear - 12 && actualMonth >= month) ||
+    (year == actualYear - 12 && actualMonth + 1 == month && actualDay >= day)
+  ) {
+    return true;
+  }
+  return false;
 }
 
 //Validates Phone number input
@@ -124,96 +129,125 @@ function isValidPassword(password) {
   return tieneMayuscula && tieneMinuscula && tieneNumero;
 }
 
-//Checks validation when you blur the input
-function check(e) {
-  var idDivided = e.target.id.split("-");
+//Checks validation.
+function check(target) {
+  var idDivided = target.id.split("-");
   var keyWord = idDivided[idDivided.length - 1];
   const alertError = document.createElement("p");
   alertError.className = "text-alert";
   var isValid = true;
-  switch (keyWord) {
-    case "name":
-      if (!isValidName(e.target.value)) {
-        alertError.innerText = "At least 4 characters (only letters).";
-        isValid = false;
-      }
-      break;
-    case "dni":
-      if (!isValidDni(e.target.value)) {
-        alertError.innerText = "At least 8 characters (only numbers).";
-        isValid = false;
-      }
-      break;
-    case "birth":
-      if (!isValidDate(e.target.value)) {
-        alertError.innerText = "You must be over 13 years old to register.";
-        isValid = false;
-      }
-      break;
-    case "phone":
-      if (!isValidPhone(e.target.value)) {
-        alertError.innerText =
-          "Phone number must content 10 characters (only numbers).";
-        isValid = false;
-      }
-      break;
-    case "adress":
-      if (!isValidAdress(e.target.value)) {
-        alertError.innerText =
-          "At least 5 alphanumerical characters and one space.";
-        isValid = false;
-      }
-      break;
-    case "location":
-      if (!isValidLocation(e.target.value)) {
-        alertError.innerText = "At least 4 alphanumerical characters.";
-        isValid = false;
-      }
-      break;
-    case "postal":
-      if (!isValidPostal(e.target.value)) {
-        alertError.innerText = "Only 4 or 5 numbers.";
-        isValid = false;
-      }
-      break;
-    case "email":
-      if (!isValidEmail(e.target.value)) {
-        alertError.innerText = "Invalid email format.";
-        isValid = false;
-      }
-      break;
-    case "password":
-      if (!isValidPassword(e.target.value)) {
-        alertError.innerText =
-          "Password must include a mix of uppercase, lowercase numbers and be at least 8 characteres long.";
-        isValid = false;
-      } else if (idDivided[1] === "r") {
-        if (e.target.value !== inputPass.value) {
-          alertError.innerText = "You must repeat the previous password.";
+  if (target.value === "") {
+    isValid = false;
+    alertError.innerText = "Required field";
+  } else {
+    switch (keyWord) {
+      case "name":
+        if (!isValidName(target.value)) {
+          alertError.innerText = "At least 4 characters (only letters).";
           isValid = false;
         }
-      }
-      break;
+        break;
+      case "dni":
+        if (!isValidDni(target.value)) {
+          alertError.innerText = "At least 8 characters (only numbers).";
+          isValid = false;
+        }
+        break;
+      case "birth":
+        if (!isValidDate(target.value)) {
+          alertError.innerText = "You must be over 13 years old to register.";
+          isValid = false;
+        }
+        break;
+      case "phone":
+        if (!isValidPhone(target.value)) {
+          alertError.innerText =
+            "Phone number must content 10 characters (only numbers).";
+          isValid = false;
+        }
+        break;
+      case "adress":
+        if (!isValidAdress(target.value)) {
+          alertError.innerText =
+            "At least 5 alphanumerical characters and one space.";
+          isValid = false;
+        }
+        break;
+      case "location":
+        if (!isValidLocation(target.value)) {
+          alertError.innerText = "At least 4 alphanumerical characters.";
+          isValid = false;
+        }
+        break;
+      case "postal":
+        if (!isValidPostal(target.value)) {
+          alertError.innerText = "Only 4 or 5 numbers.";
+          isValid = false;
+        }
+        break;
+      case "email":
+        if (!isValidEmail(target.value)) {
+          alertError.innerText = "Invalid email format.";
+          isValid = false;
+        }
+        break;
+      case "password":
+        if (!isValidPassword(target.value)) {
+          alertError.innerText =
+            "Password must include a mix of uppercase, lowercase numbers and be at least 8 characteres long.";
+          isValid = false;
+        } else if (idDivided[1] === "r") {
+          if (target.value !== inputs[9].value) {
+            alertError.innerText = "You must repeat the previous password.";
+            isValid = false;
+          }
+        }
+        break;
+    }
   }
   if (!isValid) {
-    e.target.classList = "border-red";
-    if (e.target.parentNode.children.length <= 2)
-      e.target.parentNode.appendChild(alertError);
+    target.classList = "border-red";
+    if (target.parentNode.children.length <= 2)
+      target.parentNode.appendChild(alertError);
   }
 }
 
-/* inputName.addEventListener("blur", check);
-inputLastName.addEventListener("blur", check);
-inputDni.addEventListener("blur", check);
-inputPhone.addEventListener("blur", check);
-inputAdress.addEventListener("blur", check);
-inputBirth.addEventListener("blur", check);
-inputLocation.addEventListener("blur", check);
-inputPostal.addEventListener("blur", check);
-inputEmail.addEventListener("blur", check);
-inputPass.addEventListener("blur", check);
-inputRePass.addEventListener("blur", check); */
+//Checks validations on blur
+function onBlur(e) {
+  check(e.target);
+}
+
+function cleanInput(e) {
+  e.target.classList.remove("border-red");
+  if (e.target.parentNode.children.length > 2) {
+    var text = e.target.parentNode.children[2];
+    e.target.parentNode.removeChild(text);
+  }
+}
+
+//Checks validations on submit
+function signUp(e) {
+  e.preventDefault();
+  var validSignUp = true;
+  for (i = 0; i < inputs.length; i++) {
+    check(inputs[i]);
+    if (inputs[i].classList.contains("border-red")) {
+      validSignUp = false;
+    }
+  }
+  if (validSignUp) {
+    alert("Congratulations, you have successfully created your account.");
+  } else {
+    alert("ERROR: Please complete all fields correctly");
+  }
+}
 
 for (i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener("blur", check);
+  inputs[i].addEventListener("blur", onBlur);
+  inputs[i].addEventListener("focus", cleanInput);
 }
+
+form.addEventListener("submit", signUp);
+
+console.log(inputs[7]);
+console.log();

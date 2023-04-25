@@ -40,6 +40,8 @@ footer .logo{
 
     footer{
         height:10vw;
+        margin:0;
+        padding-top:2vw;
         border-width:0.6vw;
         font-size:1vw;
     }

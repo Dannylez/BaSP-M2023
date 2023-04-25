@@ -2,6 +2,10 @@ body {
     background-color:#d9d9d9;
 }
 
+a {
+    color:#373867;
+}
+
 .container {
     display:flex;
     width:96vw;
@@ -85,6 +89,7 @@ input{
 .text-alert {
     align-self: baseline;
     color:red;
+    margin-top:1vw;
     font-weight:bold;
     font-size:3vw;
 }
@@ -117,17 +122,19 @@ input{
 
     #sign-up-container{
         height:130vw;
+        width:70vw;
     }
 
     #sign-up-form{
         flex-direction:row;
         flex-wrap: wrap;
         height:120vw;
+        width:60vw;
     }
 
     input{
-        height:4vw;
-        width:35vw;
+        height:3vw;
+        width:20vw;
         font-size: 1.7vw;
     }
 
@@ -137,8 +144,9 @@ input{
     }
 
     .sign-up-input{
+        justify-content: center;
         height:10vw;
-        width:40vw;
+        width:30vw;
         margin:0
     }
 
@@ -170,6 +178,14 @@ input{
         width:15vw;
         height:5vw;
         margin-top:2vw;
+        font-size:2vw;
+    }
+
+    .border-red {
+        border-width: 0.3vw
+    }
+
+    .text-alert {
         font-size:2vw;
     }
 }
