@@ -70,7 +70,7 @@ function isValidDate(date) {
   var month = dateArray[1];
   var year = dateArray[0];
   if (
-    (year < actualYear - 12 && year > actualYear - 112) ||
+    (year < actualYear - 12 && year > 1900) ||
     (year == actualYear - 12 && actualMonth >= month) ||
     (year == actualYear - 12 && actualMonth + 1 == month && actualDay >= day)
   ) {
