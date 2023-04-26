@@ -1,24 +1,24 @@
-.section-title {
+.section-title{
     font-size:7.7vw;
     font-weight:bold;
     color:#373867;
 }
 
-.container {
+.container{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     margin:0 2vw 8vw 2vw;
 }
 
-.with-border {
+.with-border{
     border-top:0.5vw solid rgb(221, 225, 220);
     border-bottom:0.5vw solid rgb(221, 225, 220);
     margin-left:2vw;
     margin-right:2vs;
 }
 
-.column {
+.column{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -32,11 +32,11 @@
 
 /*---------MAIN---------*/
 
-main {
+main{
     height:170vw;
     padding:2vw 0;
     background-color:rgba(170, 206, 155, 0.2);
-    font-weight: bold;
+    font-weight:bold;
     color:rgba(55, 56, 103, 0.4);
 }
 
@@ -98,7 +98,7 @@ main img{
 }
 
 #contact .column{
-    align-items: flex-start;
+    align-items:flex-start;
 }
 
 form h2{
@@ -168,7 +168,7 @@ form h2{
 
 /*---------------------TABLET---------------------*/
 
-@media only screen and (min-width: 601px){
+@media only screen and (min-width:601px){
     body{
         font-size:1.7vw;
     }
@@ -305,7 +305,7 @@ form h2{
 
     #hstry .container{
         flex-direction:row;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
     }
 
     #hstry h2{
@@ -372,7 +372,7 @@ form h2{
         font-size:2vw;
     }
 
-    .row {
+    .row{
         display:flex;
     }
     
@@ -590,7 +590,7 @@ form h2{
         height:11.5vw;
     }
 
-    button {
+    button{
         width:9vw;
         height:2.4vw;
         margin-bottom:0vw;

@@ -8,7 +8,7 @@ body{
     display:none;
 }
 
-.section-title {
+.section-title{
     font-size:7.7vw;
     font-weight:bold;
     color:#373867;
@@ -43,14 +43,14 @@ button{
     color:#373867;
 }
 
-button a {
+button a{
     color:#373867;
     text-decoration:none;
 }
 
 /*---------LISTS---------*/
 
-ol {
+ol{
     width:67vw;
     text-align:center;
     list-style-type:decimal;

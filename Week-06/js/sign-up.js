@@ -2,7 +2,7 @@ var inputs = document.querySelectorAll("input");
 var form = document.getElementById("sign-up-form");
 
 function isOnlyNumbers(string) {
-  for (i = 0; i < string.length; i++) {
+  for (var i = 0; i < string.length; i++) {
     if (!(string[i] >= 0 && string[i] <= 9)) {
       return false;
     }
@@ -11,7 +11,7 @@ function isOnlyNumbers(string) {
 }
 
 function isOnlyLetters(string) {
-  for (i = 0; i < string.length; i++) {
+  for (var i = 0; i < string.length; i++) {
     var code = string.charCodeAt(i);
     if (
       !(
@@ -29,7 +29,7 @@ function isOnlyLetters(string) {
 }
 
 function isAlphaNumeric(string) {
-  for (i = 0; i < string.length; i++) {
+  for (var i = 0; i < string.length; i++) {
     var code = string.charCodeAt(i);
     if (
       !(
@@ -47,19 +47,17 @@ function isAlphaNumeric(string) {
   return true;
 }
 
-console.log(new Date().getMonth());
-
-//Validates Name and Last name inputs
+//Validates Name and Last name inputs.
 function isValidName(name) {
   return name.length > 3 && isOnlyLetters(name);
 }
 
-//Validates DNI input
+//Validates DNI input.
 function isValidDni(dni) {
   return dni.length > 7 && isOnlyNumbers(dni);
 }
 
-//Validates Birthday input
+//Validates Birthday input.
 function isValidDate(date) {
   var today = new Date();
   var actualDay = today.getDate();
@@ -79,12 +77,12 @@ function isValidDate(date) {
   return false;
 }
 
-//Validates Phone number input
+//Validates Phone number input.
 function isValidPhone(number) {
   return number.length === 10 && isOnlyNumbers(number);
 }
 
-//Validates Adress input
+//Validates Adress input.
 function isValidAdress(adress) {
   return (
     adress.length >= 5 &&
@@ -93,23 +91,23 @@ function isValidAdress(adress) {
   );
 }
 
-//Validates Location input
+//Validates Location input.
 function isValidLocation(location) {
   return location.length > 3 && isAlphaNumeric(location);
 }
 
-//Validates Postal code input
+//Validates Postal code input.
 function isValidPostal(postal) {
   return postal.length >= 4 && postal.length <= 5 && isOnlyNumbers(postal);
 }
 
-//Validates Email input
+//Validates Email input.
 function isValidEmail(email) {
   const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
   return emailExpression.test(email);
 }
 
-//Validates Passwords input
+//Validates Passwords input.
 function isValidPassword(password) {
   if (password.length < 8) {
     return false;
@@ -117,7 +115,7 @@ function isValidPassword(password) {
   var tieneMayuscula = false;
   var tieneMinuscula = false;
   var tieneNumero = false;
-  for (i = 0; i < password.length; i++) {
+  for (var i = 0; i < password.length; i++) {
     if (password[i] >= "A" && password[i] <= "Z") {
       tieneMayuscula = true;
     } else if (password[i] >= "a" && password[i] <= "z") {
@@ -229,7 +227,7 @@ function cleanInput(e) {
 function signUp(e) {
   e.preventDefault();
   var validSignUp = true;
-  for (i = 0; i < inputs.length; i++) {
+  for (var i = 0; i < inputs.length; i++) {
     check(inputs[i]);
     if (inputs[i].classList.contains("border-red")) {
       validSignUp = false;
@@ -238,16 +236,13 @@ function signUp(e) {
   if (validSignUp) {
     alert("Congratulations, you have successfully created your account.");
   } else {
-    alert("ERROR: Please complete all fields correctly");
+    alert("ERROR:Please complete all fields correctly");
   }
 }
 
-for (i = 0; i < inputs.length; i++) {
+for (var i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("blur", onBlur);
   inputs[i].addEventListener("focus", cleanInput);
 }
 
 form.addEventListener("submit", signUp);
-
-console.log(inputs[7]);
-console.log();

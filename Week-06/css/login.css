@@ -1,39 +1,39 @@
-body {
+body{
     background-color:#d9d9d9;
 }
 
-.container {
+.container{
     display:flex;
     width:96vw;
     margin:0 auto;
     background-color:white;
 }
 
-.card {
+.card{
     display:flex;
     width:88vw;
     margin:auto;
     padding:2vw;
     border:0.5vw solid #EBEBEB;
-    border-radius: 2vw;
+    border-radius:2vw;
 }
 
-#login-container {
+#login-container{
     height:100vw;
 }
 
 
-#login-form {
+#login-form{
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
     height:90vw;
 }
 
-.login-input {
+.login-input{
     display:flex;
     justify-content:space-between;
-    align-content: flex-start;
+    align-content:flex-start;
     flex-wrap:wrap;
     margin-bottom:7vw;
     width:55vw;
@@ -45,7 +45,7 @@ body {
     margin:0;
 }
 
-label {
+label{
     height:7vw;
 }
 
@@ -57,13 +57,97 @@ input{
     font-size:3vw;
 }
 
-.border-red {
-    border: 0.5vw solid red;
+.border-red{
+    border:0.5vw solid red;
 }
 
-.text-alert {
-    align-self: baseline;
+.text-alert{
+    align-self:baseline;
     color:red;
     font-weight:bold;
     font-size:3vw;
+}
+@media only screen and (min-width:601px){
+    body{
+        font-size:3vw;
+    }
+
+    .section-title{
+        font-size:5vw;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    body{
+        font-size:1.7vw;
+    }
+
+    .section-title{
+        width:80vw;
+        font-size:3vw;
+        text-align:center;
+    }
+    
+    #login-title{
+        font-size:3vw;
+        margin:3vw;
+    }
+
+    #login-form img{
+        height:3vw;
+        margin-left:0.5vw;
+    }
+
+    #login-container{
+        margin:3.5vw auto;
+        height:50vw;
+        width:70vw;
+        border-radius:2vw;
+    }
+
+    #login-form{
+        flex-direction:row;
+        flex-wrap:wrap;
+        height:40vw;
+        width:60vw;
+    }
+
+    input{
+        height:3vw;
+        width:20vw;
+        font-size:1.7vw;
+    }
+
+    label{
+        width:20vw;
+        height:2vw;
+    }
+
+    .login-input{
+        height:10vw;
+        width:25vw;
+        margin:0
+    }
+
+    #login-buttons{
+        display:flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        width:50vw;
+    }
+
+    button{
+        width:15vw;
+        height:5vw;
+        margin-top:2vw;
+        font-size:2vw;
+    }
+
+    .border-red{
+        border-width:0.3vw
+    }
+
+    .text-alert{
+        font-size:1.5vw;
+    }
 }

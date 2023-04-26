@@ -1,49 +1,49 @@
-body {
+body{
     background-color:#d9d9d9;
 }
 
-a {
+a{
     color:#373867;
 }
 
-.container {
+.container{
     display:flex;
     width:96vw;
     margin:0 auto;
     background-color:white;
 }
 
-.card {
+.card{
     display:flex;
     width:84vw;
     margin:auto;
     padding:2vw;
     border:0.5vw solid #EBEBEB;
-    border-radius: 2vw;
+    border-radius:2vw;
 }
 
 #sign-up-title{
-    font-weight: normal;
-    font-size: 5vw;
+    font-weight:normal;
+    font-size:5vw;
     margin:5vw;
 }
 
-#sign-up-container {
+#sign-up-container{
     height:300vw;
 }
 
 
-#sign-up-form {
+#sign-up-form{
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
     height:290vw;
 }
 
-.sign-up-input {
+.sign-up-input{
     display:flex;
     justify-content:space-between;
-    align-content: flex-start;
+    align-content:flex-start;
     flex-wrap:wrap;
     margin-bottom:7vw;
     width:80vw;
@@ -52,13 +52,13 @@ a {
 
 #membership-div{
     display:flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap:wrap;
     width:80vw;
 }
 
-label {
+label{
     height:7vw;
 }
 
@@ -67,13 +67,13 @@ input{
     width:75vw;
     border-radius:1vw;
     border-width:0.2vw;
-    font-size: 3vw;
+    font-size:3vw;
 }
 
 #password-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     height:40vw;
 }
 
@@ -82,21 +82,21 @@ input{
 }
 
 
-.border-red {
-    border: 0.5vw solid red;
+.border-red{
+    border:0.5vw solid red;
 }
 
-.text-alert {
-    align-self: baseline;
+.text-alert{
+    align-self:baseline;
     color:red;
     margin-top:1vw;
     font-weight:bold;
     font-size:3vw;
 }
 
-@media only screen and (min-width: 601px){
+@media only screen and (min-width:601px){
     body{
-        font-size: 3vw;
+        font-size:3vw;
     }
 
     .section-title{
@@ -104,8 +104,8 @@ input{
     }
 }
 
-@media only screen and (min-width: 1025px){
-    body {
+@media only screen and (min-width:1025px){
+    body{
         font-size:1.7vw;
     }
 
@@ -123,11 +123,13 @@ input{
     #sign-up-container{
         height:130vw;
         width:70vw;
+        margin:3.5vw auto;
+        border-radius:2vw;
     }
 
     #sign-up-form{
         flex-direction:row;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         height:120vw;
         width:60vw;
     }
@@ -135,7 +137,7 @@ input{
     input{
         height:3vw;
         width:20vw;
-        font-size: 1.7vw;
+        font-size:1.7vw;
     }
 
     label{
@@ -144,15 +146,15 @@ input{
     }
 
     .sign-up-input{
-        justify-content: center;
+        justify-content:center;
         height:10vw;
         width:30vw;
         margin:0
     }
 
     #password-div{
-        display: flex;
-        flex-direction: row;
+        display:flex;
+        flex-direction:row;
         height:10vw;
         width:84vw;
     }
@@ -171,7 +173,7 @@ input{
 
     #required-fields{
         width:80vw;
-        text-align: center;
+        text-align:center;
     }
 
     button{
@@ -181,11 +183,11 @@ input{
         font-size:2vw;
     }
 
-    .border-red {
-        border-width: 0.3vw
+    .border-red{
+        border-width:0.3vw
     }
 
-    .text-alert {
+    .text-alert{
         font-size:2vw;
     }
 }

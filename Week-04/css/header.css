@@ -1,4 +1,4 @@
-header {
+header{
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -10,7 +10,7 @@ header {
     color:rgba(55, 56, 103, 0.4);
 }
 
-.box {
+.box{
     display:flex;
     justify-content:flex-start;
     align-items:center;
@@ -26,16 +26,16 @@ header button{
     border:none;
 }
 
-.box img {
+.box img{
     width:10.7vw;
 }
 
-.logos {
+.logos{
     display:flex;
     justify-content:space-between;
     width:40%;
 }
 
-.logo {
+.logo{
     width:5vw;
 }

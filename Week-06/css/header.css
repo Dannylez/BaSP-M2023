@@ -1,4 +1,4 @@
-header {
+header{
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -12,7 +12,7 @@ header {
     background-color:white;
 }
 
-.box {
+.box{
     display:flex;
     justify-content:flex-start;
     align-items:center;
@@ -28,18 +28,18 @@ header button{
     border:none;
 }
 
-.box img {
+.box img{
     width:10.7vw;
 }
 
-.logos {
+.logos{
     display:flex;
     justify-content:space-between;
     width:40%;
     margin-right:5vw;
 }
 
-.logo {
+.logo{
     width:5vw;
 }
 
@@ -49,7 +49,7 @@ button{
     margin-top:5vw;
 }
 
-@media only screen and (min-width: 601px){
+@media only screen and (min-width:601px){
     body{
         font-size:1.7vw;
     }
@@ -91,7 +91,7 @@ button{
         font-size:2vw;
     }
 
-    .row {
+    .row{
         display:flex;
     }
     
