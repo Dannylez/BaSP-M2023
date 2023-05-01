@@ -1,0 +1,58 @@
+body{
+    font-family:'Roboto',sans-serif;
+    color:#373867;
+    font-size:3.6vw;
+}
+
+.mobile-hide, .btn-hide{
+    display:none;
+}
+
+.section-title{
+    font-size:7.7vw;
+    font-weight:bold;
+    color:#373867;
+}
+
+/*---------FORMS---------*/
+
+label{
+    display:block;
+    width:100%;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    display:block;
+    border-color:#373867;
+    font-family:'Roboto',sans-serif;
+    color:rgba(55, 56, 103, 0.5);
+}
+
+::placeholder{
+    color:rgba(55, 56, 103, 0.5);
+}
+
+button{
+    width:25vw;
+    height:8vw;
+    margin-top:5vw;
+    border-radius:1vw;
+    border:0.3vw solid #373867;
+    background-color:white;
+    color:#373867;
+}
+
+button a{
+    color:#373867;
+    text-decoration:none;
+}
+
+/*---------LISTS---------*/
+
+ol{
+    width:67vw;
+    text-align:center;
+    list-style-type:decimal;
+    list-style-position:inside;
+}

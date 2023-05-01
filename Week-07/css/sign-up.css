@@ -1,0 +1,193 @@
+body{
+    background-color:#d9d9d9;
+}
+
+a{
+    color:#373867;
+}
+
+.container{
+    display:flex;
+    width:96vw;
+    margin:0 auto;
+    background-color:white;
+}
+
+.card{
+    display:flex;
+    width:84vw;
+    margin:auto;
+    padding:2vw;
+    border:0.5vw solid #EBEBEB;
+    border-radius:2vw;
+}
+
+#sign-up-title{
+    font-weight:normal;
+    font-size:5vw;
+    margin:5vw;
+}
+
+#sign-up-container{
+    height:300vw;
+}
+
+
+#sign-up-form{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:290vw;
+}
+
+.sign-up-input{
+    display:flex;
+    justify-content:space-between;
+    align-content:flex-start;
+    flex-wrap:wrap;
+    margin-bottom:7vw;
+    width:80vw;
+    height:15vw;
+}
+
+#membership-div{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap:wrap;
+    width:80vw;
+}
+
+label{
+    height:7vw;
+}
+
+input{
+    height:8.5vw;
+    width:75vw;
+    border-radius:1vw;
+    border-width:0.2vw;
+    font-size:3vw;
+}
+
+#password-div{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:40vw;
+}
+
+#password-div label{
+    height:4vw;
+}
+
+
+.border-red{
+    border:0.5vw solid red;
+}
+
+.text-alert{
+    align-self:baseline;
+    color:red;
+    margin-top:1vw;
+    font-weight:bold;
+    font-size:3vw;
+}
+
+@media only screen and (min-width:601px){
+    body{
+        font-size:3vw;
+    }
+
+    .section-title{
+        font-size:5vw;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    body{
+        font-size:1.7vw;
+    }
+
+    .section-title{
+        width:80vw;
+        font-size:3vw;
+        text-align:center;
+    }
+    
+    #sign-up-title{
+        font-size:3vw;
+        margin:3vw;
+    }
+
+    #sign-up-container{
+        height:130vw;
+        width:70vw;
+        margin:3.5vw auto;
+        border-radius:2vw;
+    }
+
+    #sign-up-form{
+        flex-direction:row;
+        flex-wrap:wrap;
+        height:120vw;
+        width:60vw;
+    }
+
+    input{
+        height:3vw;
+        width:20vw;
+        font-size:1.7vw;
+    }
+
+    label{
+        width:20vw;
+        height:2vw;
+    }
+
+    .sign-up-input{
+        justify-content:center;
+        height:10vw;
+        width:30vw;
+        margin:0
+    }
+
+    #password-div{
+        display:flex;
+        flex-direction:row;
+        height:10vw;
+        width:84vw;
+    }
+    
+    #password-div label{
+        height:2vw;
+        width:40vw;
+    }
+
+    #sign-up-buttons{
+        display:flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        width:50vw;
+    }
+
+    #required-fields{
+        width:80vw;
+        text-align:center;
+    }
+
+    button{
+        width:15vw;
+        height:5vw;
+        margin-top:2vw;
+        font-size:2vw;
+    }
+
+    .border-red{
+        border-width:0.3vw
+    }
+
+    .text-alert{
+        font-size:2vw;
+    }
+}

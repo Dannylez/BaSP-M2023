@@ -55,8 +55,7 @@ console.log(months);
 mes este separado por un guión - (utilizar join). */
 
 console.log("-Exercise 3.f:");
-months.join("-");
-console.log(months);
+console.log(months.join("-"));
 
 /* g. Crear una copia del array de meses que contenga desde Mayo hasta
 Noviembre (utilizar slice). */
