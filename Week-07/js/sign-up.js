@@ -1,6 +1,5 @@
 var inputs = document.querySelectorAll("input");
 var form = document.getElementById("sign-up-form");
-
 var user = localStorage.getItem("user");
 var userData = JSON.parse(user);
 
@@ -17,11 +16,22 @@ if (user) {
 
 function isOnlyNumbers(string) {
   for (var i = 0; i < string.length; i++) {
-    if (!(string[i] >= 0 && string[i] <= 9)) {
+    var code = string.charCodeAt(i);
+    if (!(code >= 48 && code <= 57)) {
       return false;
     }
   }
   return true;
+}
+
+function itHasNumbers(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if (code >= 48 && code <= 57) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function isOnlyLetters(string) {
@@ -32,14 +42,51 @@ function isOnlyLetters(string) {
         (
           (code >= 65 && code <= 90) || //Uppercase
           (code >= 97 && code <= 122) || //Lowercase
-          code === 32
-        ) //spaces
+          code === 32 ||
+          code === 164 ||
+          code === 165
+        ) //spaces, ñ and Ñ
       )
     ) {
       return false;
     }
   }
   return true;
+}
+
+function itHasLetters(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if (
+      (code >= 65 && code <= 90) ||
+      (code >= 97 && code <= 122) ||
+      code === 164 ||
+      code === 165
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function itHasUpperCase(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if ((code >= 65 && code <= 90) || code === 165) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function itHasLowerCase(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if ((code >= 97 && code <= 122) || code === 165) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function isAlphaNumeric(string) {
@@ -72,17 +119,14 @@ function toCamelCase(string) {
   return string;
 }
 
-//Validates Name and Last name inputs.
 function isValidName(name) {
-  return name.length > 3 && isOnlyLetters(name);
+  return name.length >= 3 && isOnlyLetters(name);
 }
 
-//Validates DNI input.
 function isValidDni(dni) {
   return dni.length > 7 && isOnlyNumbers(dni);
 }
 
-//Validates Birthday input.
 function isValidDate(date) {
   var today = new Date();
   var actualDay = today.getDate();
@@ -102,57 +146,44 @@ function isValidDate(date) {
   return false;
 }
 
-//Validates Phone number input.
 function isValidPhone(number) {
   return number.length === 10 && isOnlyNumbers(number);
 }
 
-//Validates Adress input.
-function isValidAdress(adress) {
+function isValidAddress(address) {
   return (
-    adress.length >= 5 &&
-    adress.trim().indexOf(" ") !== -1 &&
-    isAlphaNumeric(adress)
+    address.length >= 5 &&
+    address.trim().indexOf(" ") !== -1 &&
+    isAlphaNumeric(address) &&
+    itHasLetters(address) &&
+    itHasNumbers(address)
   );
 }
 
-//Validates Location input.
 function isValidLocation(location) {
-  return location.length > 3 && isAlphaNumeric(location);
+  return (
+    location.length > 3 && isAlphaNumeric(location) && itHasLetters(location)
+  );
 }
 
-//Validates Postal code input.
 function isValidPostal(postal) {
   return postal.length >= 4 && postal.length <= 5 && isOnlyNumbers(postal);
 }
 
-//Validates Email input.
 function isValidEmail(email) {
   const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
   return emailExpression.test(email);
 }
 
-//Validates Passwords input.
 function isValidPassword(password) {
-  if (password.length < 8) {
-    return false;
-  }
-  var tieneMayuscula = false;
-  var tieneMinuscula = false;
-  var tieneNumero = false;
-  for (var i = 0; i < password.length; i++) {
-    if (password[i] >= "A" && password[i] <= "Z") {
-      tieneMayuscula = true;
-    } else if (password[i] >= "a" && password[i] <= "z") {
-      tieneMinuscula = true;
-    } else if (password[i] >= 0 && password[i] <= 9) {
-      tieneNumero = true;
-    }
-  }
-  return tieneMayuscula && tieneMinuscula && tieneNumero;
+  return (
+    password.length >= 8 &&
+    itHasLowerCase(password) &&
+    itHasUpperCase(password) &&
+    itHasNumbers(password)
+  );
 }
 
-//Checks validation.
 function check(target) {
   var idDivided = target.id.split("-");
   var keyWord = idDivided[idDivided.length - 1];
@@ -178,7 +209,7 @@ function check(target) {
         break;
       case "dob":
         if (!isValidDate(target.value)) {
-          alertError.innerText = "You must be over 13 years old to register.";
+          alertError.innerText = "You must be over 12 years old to register.";
           isValid = false;
         }
         break;
@@ -190,7 +221,7 @@ function check(target) {
         }
         break;
       case "address":
-        if (!isValidAdress(target.value)) {
+        if (!isValidAddress(target.value)) {
           alertError.innerText =
             "At least 5 alphanumerical characters and one space.";
           isValid = false;
@@ -235,7 +266,6 @@ function check(target) {
   }
 }
 
-//Checks validations on blur
 function onBlur(e) {
   check(e.target);
 }
@@ -248,7 +278,6 @@ function cleanInput(e) {
   }
 }
 
-//Checks validations on submit
 function signUp(e) {
   e.preventDefault();
   var queryString = "";
@@ -280,6 +309,7 @@ function signUp(e) {
             "SIGN UP SUCCESS \n" + data.msg + JSON.stringify(data.data, null, 2)
           );
           localStorage.setItem("user", JSON.stringify(data.data));
+          window.location.href = form.action;
         } else {
           alert(JSON.stringify(data.msg));
         }

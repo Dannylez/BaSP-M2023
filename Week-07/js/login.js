@@ -2,7 +2,6 @@ var inputEmail = document.getElementById("input-email");
 var inputPass = document.getElementById("input-password");
 var form = document.getElementById("login-form");
 var inputs = document.querySelectorAll(".login-input");
-
 var user = localStorage.getItem("user");
 var userData = JSON.parse(user);
 
@@ -11,23 +10,43 @@ if (user) {
   inputPass.value = userData.password;
 }
 
-function isValidPassword(password) {
-  if (password.length < 8) {
-    return false;
-  }
-  var tieneMayuscula = false;
-  var tieneMinuscula = false;
-  var tieneNumero = false;
-  for (i = 0; i < password.length; i++) {
-    if (password[i] >= "A" && password[i] <= "Z") {
-      tieneMayuscula = true;
-    } else if (password[i] >= "a" && password[i] <= "z") {
-      tieneMinuscula = true;
-    } else if (password[i] >= 0 && password[i] <= 9) {
-      tieneNumero = true;
+function itHasNumbers(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if (code >= 48 && code <= 57) {
+      return true;
     }
   }
-  return tieneMayuscula && tieneMinuscula && tieneNumero;
+  return false;
+}
+
+function itHasUpperCase(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if ((code >= 65 && code <= 90) || code === 165) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function itHasLowerCase(string) {
+  for (var i = 0; i < string.length; i++) {
+    var code = string.charCodeAt(i);
+    if ((code >= 97 && code <= 122) || code === 165) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function isValidPassword(password) {
+  return (
+    password.length >= 8 &&
+    itHasLowerCase(password) &&
+    itHasUpperCase(password) &&
+    itHasNumbers(password)
+  );
 }
 
 function isValidEmail(email) {

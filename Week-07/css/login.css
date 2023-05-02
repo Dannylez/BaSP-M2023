@@ -1,4 +1,8 @@
 body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:100vh;
     background-color:#d9d9d9;
 }
 
@@ -16,6 +20,10 @@ body{
     padding:2vw;
     border:0.5vw solid #EBEBEB;
     border-radius:2vw;
+}
+
+button{
+    font-size: 4vw;;
 }
 
 #login-container{
