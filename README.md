@@ -59,4 +59,9 @@ This week's task involved implementing validation criteria for a Login and Sign 
 The only input validated using Regex was the email input, and all inputs had type="text", except for password (type="password") and date of birth (type="date").
 Both the login and sign up pages were created using previously learned skills of responsive HTML and CSS. Additionally, hamburger menu functionality was added to the landing page. Also, connections were made between the landing, sign up, and login pages. All of this can be found on this GitHub Pages:https://dannylez.github.io/BaSP-M2023/Week-06/views/index.html
 
+## Week 07
+
+This week, I extended the forms created in week 06 to send data to a web server via an HTTP request using JavaScript's Fetch method. When submitted, if all fields are valid, the query-params string is constructed and passed to the Fetch method to make the HTTP request. An alert is displayed with the message from the response, indicating whether it was successful or not.
+All of this can be found on the following GitHub pages: https://dannylez.github.io/BaSP-M2023/Week-07/views/index.html
+
 Author:Daniel Lezama
