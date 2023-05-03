@@ -12,6 +12,14 @@ header{
     background-color:white;
 }
 
+#btn-home{
+    display:block;
+    margin-top:5vw;
+    margin-left:2vw;
+    width:12vw;
+    color:rgba(55, 56, 103, 0.4);
+}
+
 .box{
     display:flex;
     justify-content:flex-start;
@@ -26,6 +34,7 @@ header button{
     padding:0;
     width:10.7vw;
     border:none;
+    font-size:2vw;
 }
 
 .box img{
